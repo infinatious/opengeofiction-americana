@@ -65,7 +65,7 @@ let networks = [
 ];
 
 // Uncomment for a list of all supported networks.  This makes for a very long page.
-//networks = Object.keys(shields);
+networks = Object.keys(shields);
 
 let refs = [
   "1",
