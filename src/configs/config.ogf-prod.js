@@ -1,9 +1,9 @@
 "use strict";
 
 /*
-Planetiler tile server, hosted at AWS
+Infinatious Prod OpenMapTiles Server
 */
-const OPENMAPTILES_URL = "https://tile.ourmap.us/data/v3.json";
+const OPENMAPTILES_URL = "https://ogfvector.infinatio.us/data/openmaptiles.json";
 
 /*
 The following two variables override the color of the bounding box and halo of
