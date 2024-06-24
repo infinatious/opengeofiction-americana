@@ -23,6 +23,26 @@ export const building = {
   "source-layer": "building",
 };
 
+export const highwayarea = {
+  "id": "highwayarea",
+  "type": "fill",
+  "source": "openmaptiles",
+  "source-layer": "transportation",
+  "filter": [
+    "all",
+    ["==", "$type", "Polygon"],
+    ["!in", "class", "pier"]
+  ],
+  "layout": {"visibility": "visible"},
+  "paint": {
+    "fill-antialias": false,
+    "fill-color": "hsla(0, 0%, 89%, 0.56)",
+    "fill-opacity": 0.9,
+    "fill-outline-color": "#cfcdca"
+  }
+}
+
+
 export const legendEntries = [
   {
     description: "Building",

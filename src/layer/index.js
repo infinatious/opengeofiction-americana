@@ -144,6 +144,8 @@ export function build(locales) {
 
   layers.push(lyrBuilding.building);
 
+  layers.push(lyrBuilding.highwayarea);
+
   var bridgeLayers = [
     lyrRail.bridgeCasing,
 
