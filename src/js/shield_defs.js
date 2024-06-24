@@ -282,9 +282,9 @@ export function loadShields() {
     spriteBlank: "shield_fsa_hy",
     textColor: "#000000",
     padding: {
-      left: 5,
+      left: 6,
       right: 8,
-      top: 5,
+      top: 6,
       bottom: 8,
     },
   };
