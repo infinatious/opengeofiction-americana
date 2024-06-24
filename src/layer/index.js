@@ -225,6 +225,7 @@ export function build(locales) {
     lyrAeroway.minorAirportLabel,
     lyrAeroway.airportGate,
 
+    lyrHighwayShield.ref,
     lyrHighwayShield.shield,
 
     lyrHighwayExit.exits,
