@@ -268,7 +268,7 @@ export function loadShields() {
   //Zakahigan
   shields["FSA:Z"] = {
     spriteBlank: "shield_fsa_z",
-    textColor: Color.shields.black,
+    textColor: "#00292d",
     padding: {
       left: 3,
       right: 3,
