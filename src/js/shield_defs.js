@@ -260,7 +260,7 @@ export function loadShields() {
     padding: {
       left: 5,
       right: 5,
-      top: 5,
+      top: 6,
       bottom: 3,
     },
   };
@@ -294,7 +294,7 @@ export function loadShields() {
     padding: {
       left: 2,
       right: 2,
-      top: 5,
+      top: 7,
       bottom: 5,
     },
   };
@@ -304,7 +304,6 @@ export function loadShields() {
   shields["FSA:TA"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:TN"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:AC"] = pillShield(Color.shields.white, Color.shields.black);
-  shields["FSA:HY"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:IL"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:OA"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:PM"] = pillShield(Color.shields.white, Color.shields.black);
