@@ -50,12 +50,22 @@ let networks = [
   "FSA:S",
   "FSA:AW",
   "FSA:ME",
-  "FSA:M"
+  "FSA:M",
+  "FSA:AL",
+  "FSA:CL",
+  "FSA:RP",
+  "FSA:RS",
+  "FSA:WM",
+  "FSA:MK",
+  "FSA:MC",
+  "FSA:WI",
+  "FSA:PQ",
+  "FSA:Z"
 
 ];
 
 // Uncomment for a list of all supported networks.  This makes for a very long page.
-networks = Object.keys(shields);
+//networks = Object.keys(shields);
 
 let refs = [
   "1",
