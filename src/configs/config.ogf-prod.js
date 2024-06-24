@@ -4,6 +4,16 @@
 Infinatious Prod OpenMapTiles Server
 */
 const OPENMAPTILES_URL = "https://ogfvector.infinatio.us/data/openmaptiles.json";
+const ATTRIBUTION_LOGO = `
+<a href="https://opengeofiction.net">
+  <img src="https://opengeofiction.net/assets/osm_logo-d621af7a73a07ad6abb9617a9ab397682b788b9d90221afa998a0f1744b7295a.svg"
+  alt="OGF logo"
+  width=40
+  style="padding: 10px;"
+  />
+</a>`;
+const ATTRIBUTION_TEXT =
+  '<a href="https://opengeofiction.net" target="_blank">&copy; OpenGeofiction contributors</a>';
 
 /*
 The following two variables override the color of the bounding box and halo of
@@ -13,15 +23,10 @@ Both accept an HTML color name, hex code, or other CSS color value.
 const SHIELD_TEXT_BBOX_COLOR = null;
 const SHIELD_TEXT_HALO_COLOR_OVERRIDE = null;
 
-/*
-Uncomment the following line here and in the export block to change the location
-of the font stack (normally, for development and test)
-*/
-//const FONT_URL = font_stack_url
-
 export default {
   OPENMAPTILES_URL,
+  ATTRIBUTION_LOGO,
+  ATTRIBUTION_TEXT,
   SHIELD_TEXT_BBOX_COLOR,
   SHIELD_TEXT_HALO_COLOR_OVERRIDE,
-  // FONT_URL,
 };
