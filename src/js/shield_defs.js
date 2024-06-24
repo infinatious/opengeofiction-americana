@@ -298,6 +298,26 @@ export function loadShields() {
       bottom: 4,
     },
   };
+  shields["FSA:HYE"] = {
+    spriteBlank: "shield_fsa_hy_exp",
+    textColor: "#00894b",
+    padding: {
+      left: 6,
+      right: 8,
+      top: 6,
+      bottom: 8,
+    },
+  };
+  shields["FSA:HYW"] = {
+    spriteBlank: "shield_fsa_hy_hydeway",
+    textColor: "#938b33",
+    padding: {
+      left: 6,
+      right: 8,
+      top: 6,
+      bottom: 8,
+    },
+  };
 
   // Other states as circles for now
   shields["FSA:WA"] = pillShield(Color.shields.white, Color.shields.black);
