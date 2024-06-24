@@ -283,9 +283,9 @@ export function loadShields() {
     textColor: "#000000",
     padding: {
       left: 5,
-      right: 9,
+      right: 8,
       top: 5,
-      bottom: 9,
+      bottom: 8,
     },
   };
   shields["FSA:HYC"] = {
@@ -294,8 +294,8 @@ export function loadShields() {
     padding: {
       left: 2,
       right: 2,
-      top: 7,
-      bottom: 5,
+      top: 8,
+      bottom: 4,
     },
   };
 
