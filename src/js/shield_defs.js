@@ -241,6 +241,11 @@ export function loadShields() {
       bottom: 3,
     },
   };
+  shields["FSA:WIS"] = homePlateDownShield(
+    5,
+    Color.shields.white,
+    Color.shields.black
+  );
 
   //Penquisset
   shields["FSA:PQ"] = {
