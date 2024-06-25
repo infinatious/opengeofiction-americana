@@ -17,7 +17,7 @@ const minZoomSmallService = 15;
 //Exponent base for inter-zoom interpolation
 const roadExp = 1.2;
 
-const roadHue = 330; //Default 0 
+const roadHue = 345; //Default 0 
 const tollRoadHue = 48;
 const buswayHue = 322;
 
