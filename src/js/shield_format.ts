@@ -19,5 +19,5 @@ export const routeParser: RouteParser = {
     return parseImageName(id);
   },
   format: (network: string, ref: string, name: string) =>
-    `shield\n${network}\n${ref}\n${name}\n`,
+    `shield\n${network}=${ref}\n${name}`,
 };
