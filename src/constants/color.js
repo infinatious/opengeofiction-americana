@@ -74,9 +74,20 @@ export const funicularFill = "hsl(0, 0%, 50%)";
 export const sandFill = "hsl(44, 55%, 90%)";
 export const grassFill = "hsl(91, 60%, 84%)";
 export const woodFill = "rgb(193, 228, 168)";
-export const farmlandFill = "";
-export const wetlandFill = "";
-export const rockFill = "";
+export const farmlandFill = "hsl(55, 58%, 88%)";
+export const wetlandFill = "rgb(177, 236, 208)";
+export const rockFill = "hsl(30, 47%, 94%)";
+export const residentialFill = "hsl(30, 10%, 99%)";
+export const industrialFill = "rgba(224, 210, 243, 0.34)";
+export const retailFill = "rgba(247, 221, 240, 0.34)";
+export const commercialFill = "hsla(60, 13%, 91%, 0.99)";
+export const schoolFill = "rgba(248, 248, 232, 1)";
+export const sportsFill = "rgba(203, 243, 219, 1)";
+export const quarryFill = "rgba(208, 208, 208, 1)";
+export const quarryOutline = "rgba(130, 137, 133, 1)";
+export const cemetaryFill = "rgba(231, 237, 215, 1)";
+export const militaryFill = "rgba(243, 210, 203, 1)";
+export const militaryOutline = "rgba(52, 2, 8, 1)";
 
 
 export const hue = {
