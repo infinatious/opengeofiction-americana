@@ -342,7 +342,7 @@ export function loadShields() {
       left: 4,
       right: 4,
       top: 2,
-      bottom: 6,
+      bottom: 8,
     },
   };
 
@@ -350,12 +350,11 @@ export function loadShields() {
   shields["FSA:AC"] = {
     spriteBlank: "shield_fsa_ac",
     textColor: "#00894b",
-    textLayout: textConstraint("triangleDown"),
     padding: {
-      left: -2,
-      right: -2,
+      left: 2,
+      right: 1,
       top: 6,
-      bottom: 2,
+      bottom: 1,
     },
   };
 
