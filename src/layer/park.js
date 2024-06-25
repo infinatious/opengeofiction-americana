@@ -134,7 +134,7 @@ export const scrub = {
     ["==", "subclass", "scrub"]
   ],
   "paint": {
-    "fill-color": "rgba(180, 236, 208, 1)",
+    "fill-color": Color.scrubFill,
     "fill-opacity": 1
   }
 }
