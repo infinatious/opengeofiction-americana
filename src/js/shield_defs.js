@@ -97,7 +97,7 @@ export function loadShields() {
 
 
   shields["FSA:FS"] = {
-    spriteBlank: "shield_fsa_fs",
+    spriteBlank: ["shield_fsa_fs_2", "shield_fsa_fs_3"],
     textLayout: textConstraint("ellipse"),
     textColor: "#880000",
     padding: {
