@@ -331,12 +331,26 @@ export function loadShields() {
     },
   };
 
+  //Illuvia
+  shields["FSA:IL"] = pillShield(Color.shields.white, Color.shields.black);
+
+  //Wychelle 
+  shields["FSA:WY"] = {
+    spriteBlank: "shield_fsa_wy",
+    textColor: "#d4aa00",
+    padding: {
+      left: 4,
+      right: 4,
+      top: 4,
+      bottom: 6,
+    },
+  };
+
   // Other states as circles for now
   shields["FSA:WA"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:TA"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:TN"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:AC"] = pillShield(Color.shields.white, Color.shields.black);
-  shields["FSA:IL"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:OA"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:PM"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:TI"] = pillShield(Color.shields.white, Color.shields.black);
