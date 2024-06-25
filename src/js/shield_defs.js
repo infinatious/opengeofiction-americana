@@ -285,7 +285,7 @@ export function loadShields() {
       left: 2,
       right: 2,
       top: 8,
-      bottom: 4,
+      bottom: 2,
     },
   };
   shields["FSA:HYE"] = {
