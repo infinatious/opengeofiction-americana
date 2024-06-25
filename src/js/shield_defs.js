@@ -312,7 +312,7 @@ export function loadShields() {
   //Ruppacke
   shields["FSA:AG"] = {
     spriteBlank: ["shield_fsa_ag_2", "shield_fsa_ag_3"],
-    textColor: "#1b174a",
+    textColor: "#004a7f",
     padding: {
       left: 2,
       right: 2,
@@ -322,7 +322,7 @@ export function loadShields() {
   };
   shields["FSA:RP"] = {
     spriteBlank: ["shield_fsa_ag_2", "shield_fsa_ag_3"],
-    textColor: "#1b174a",
+    textColor: "#004a7f",
     padding: {
       left: 2,
       right: 2,
