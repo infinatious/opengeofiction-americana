@@ -182,16 +182,6 @@ export function loadShields() {
   };
 
   //Riopoderos
-  shields["FSA:RP"] = {
-    spriteBlank: "shield_fsa_rp",
-    textColor: Color.shields.black,
-    padding: {
-      left: 3,
-      right: 3,
-      top: 4,
-      bottom: 2,
-    },
-  };
   shields["FSA:RS"] = {
     spriteBlank: "shield_fsa_rp",
     textColor: Color.shields.black,
@@ -318,7 +308,19 @@ export function loadShields() {
       bottom: 8,
     },
   };
+
+  //Ruppacke
   shields["FSA:AG"] = {
+    spriteBlank: ["shield_fsa_ag_2", "shield_fsa_ag_3"],
+    textColor: "#1b174a",
+    padding: {
+      left: 2,
+      right: 2,
+      top: 6,
+      bottom: 2,
+    },
+  };
+  shields["FSA:RP"] = {
     spriteBlank: ["shield_fsa_ag_2", "shield_fsa_ag_3"],
     textColor: "#1b174a",
     padding: {
