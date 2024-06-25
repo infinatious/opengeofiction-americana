@@ -74,6 +74,7 @@ export const funicularFill = "hsl(0, 0%, 50%)";
 export const sandFill = "hsl(44, 55%, 90%)";
 export const grassFill = "hsl(91, 60%, 84%)";
 export const woodFill = "rgb(193, 228, 168)";
+export const scrubFill = "hsl(91, 60%, 80%)";
 export const farmlandFill = "hsl(55, 58%, 88%)";
 export const wetlandFill = "rgb(177, 236, 208)";
 export const rockFill = "hsl(30, 47%, 94%)";
