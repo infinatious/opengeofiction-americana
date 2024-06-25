@@ -341,7 +341,7 @@ export function loadShields() {
     padding: {
       left: 4,
       right: 4,
-      top: 4,
+      top: 2,
       bottom: 6,
     },
   };
@@ -363,7 +363,6 @@ export function loadShields() {
   shields["FSA:WA"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:TA"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:TN"] = pillShield(Color.shields.white, Color.shields.black);
-  shields["FSA:AC"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:OA"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:PM"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:TI"] = pillShield(Color.shields.white, Color.shields.black);
