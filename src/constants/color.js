@@ -74,6 +74,10 @@ export const funicularFill = "hsl(0, 0%, 50%)";
 export const sandFill = "hsl(44, 55%, 90%)";
 export const grassFill = "hsl(91, 60%, 84%)";
 export const woodFill = "rgb(193, 228, 168)";
+export const farmlandFill = "";
+export const wetlandFill = "";
+export const rockFill = "";
+
 
 export const hue = {
   tollRoad: 48,
