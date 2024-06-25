@@ -346,6 +346,19 @@ export function loadShields() {
     },
   };
 
+  //Alcortez
+  shields["FSA:AC"] = {
+    spriteBlank: "shield_fsa_ac",
+    textColor: "#00894b",
+    textLayout: textConstraint("triangleDown"),
+    padding: {
+      left: -2,
+      right: -2,
+      top: 6,
+      bottom: 2,
+    },
+  };
+
   // Other states as circles for now
   shields["FSA:WA"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:TA"] = pillShield(Color.shields.white, Color.shields.black);
