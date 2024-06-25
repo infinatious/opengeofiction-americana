@@ -140,7 +140,7 @@ export const ref = {
     "icon-rotation-alignment": "viewport",
     "icon-size": 1,
     "symbol-placement": {
-      "base": 1,
+      "base": 1.15,
       "stops": [
         [10, "point"],
         [11, "line"]
@@ -148,9 +148,9 @@ export const ref = {
     },
     "symbol-spacing": 200,
     "text-field": "{ref}",
-    "text-font": ["Americana-Bold"],
+    "text-font": ["Americana-Regular"],
     "text-rotation-alignment": "viewport",
-    "text-size": 10,
+    "text-size": 11,
     "icon-text-fit": "both",
     "icon-text-fit-padding": [
       2,
