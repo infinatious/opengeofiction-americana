@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="20"
+   height="20"
+   version="1.0"
+   id="svg1"
+   sodipodi:docname="shield_fsa_ag_2.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="21.054104"
+     inkscape:cx="1.3061586"
+     inkscape:cy="18.689942"
+     inkscape:window-width="1280"
+     inkscape:window-height="1387"
+     inkscape:window-x="-8"
+     inkscape:window-y="22"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg1" />
+  <use
+     transform="matrix(.92938 0 0 -.92938 19977 4810.8)"
+     width="300"
+     height="240"
+     fill="#fff"
+     stroke="#000"
+     stroke-linejoin="round"
+     stroke-width="309"
+     xlink:href="#state_outline"
+     id="use1" />
+  <rect
+     width="19"
+     height="19"
+     rx="1.5"
+     ry="1.5"
+     fill="#bf2033"
+     style="fill:#ebd90f;stroke:#1b174a;fill-opacity:1;stroke-opacity:1"
+     x=".5"
+     y=".5"
+     id="rect1" />
+  <path
+     style="fill:none;stroke:#1b174a;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m 0.5,4.5 h 19"
+     id="path1" />
+</svg>

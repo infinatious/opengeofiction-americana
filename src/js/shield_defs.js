@@ -318,6 +318,16 @@ export function loadShields() {
       bottom: 8,
     },
   };
+  shields["FSA:AG"] = {
+    spriteBlank: ["shield_fsa_ag_2", "shield_fsa_ag_3"],
+    textColor: "#1b174a",
+    padding: {
+      left: 2,
+      right: 2,
+      top: 6,
+      bottom: 2,
+    },
+  };
 
   // Other states as circles for now
   shields["FSA:WA"] = pillShield(Color.shields.white, Color.shields.black);
@@ -331,7 +341,6 @@ export function loadShields() {
   shields["FSA:SN"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:NC"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:OQ"] = pillShield(Color.shields.white, Color.shields.black);
-  shields["FSA:AG"] = pillShield(Color.shields.white, Color.shields.black);
 
 
   // RTC
