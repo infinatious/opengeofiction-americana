@@ -114,6 +114,8 @@ export function loadShields() {
     Color.shields.white,
     Color.shields.black
   );
+  shields["FSA:TM:Spur"] = banneredShield(shields["FSA:TM"], ["SPUR"]);
+
 
   // Sierra
   shields["FSA:S"] = diamondShield(
@@ -258,6 +260,9 @@ export function loadShields() {
       top: 2,
       bottom: 6,
     },
+    "banners": ["ALT"],
+    "bannerTextColor": "#000",
+    "bannerTextHaloColor": "#FFF",
   };
   shields["FSA:PQ:ALT"] = {
     spriteBlank: "shield_fsa_pq_alt",
