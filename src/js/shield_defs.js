@@ -224,7 +224,7 @@ export function loadShields() {
     padding: {
       left: 3,
       right: 3,
-      top: 5,
+      top: 6,
       bottom: 3,
     },
   };
