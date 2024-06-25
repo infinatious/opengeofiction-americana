@@ -1,23 +1,33 @@
 "use strict";
 
-const orderedRouteAttributes = ["network", "ref", "name", "color"];
+export const namedRouteNetworks = [
+  "US:CT:Parkway",
+  "US:KY:Parkway",
+  "US:NH:Turnpike",
+  "US:NY:Parkway",
+  "US:TX:Fort_Bend:FBCTRA",
+  "US:TX:Harris:HCTRA",
+];
 
 export function getImageNameExpression(routeIndex) {
-  let concat = ["concat", "shield"];
-  for (let attr of orderedRouteAttributes) {
-    concat.push("\n");
-    concat.push(["coalesce", ["get", `route_${routeIndex}_${attr}`], ""]);
-  }
-  return concat;
+  return [
+    "concat",
+    "shield\n",
+    ["get", "route_" + routeIndex],
+    [
+      "match",
+      ["get", "route_" + routeIndex],
+      namedRouteNetworks.map((n) => n + "="),
+      ["concat", "\n", ["get", "name"]],
+      "",
+    ],
+  ];
 }
 
 function routeConcurrency(routeIndex) {
   return [
     "case",
-    [
-      "any",
-      ...orderedRouteAttributes.map((a) => ["has", `route_${routeIndex}_${a}`]),
-    ],
+    ["!=", ["get", "route_" + routeIndex], null],
     ["image", getImageNameExpression(routeIndex)],
     ["literal", ""],
   ];
@@ -27,16 +37,12 @@ function routeConcurrency(routeIndex) {
  * Returns a structured representation of the given image name.
  *
  * @param name An image name in the format returned by `routeConcurrency`.
- * @return An object with the keys in `orderedRouteAttributes` plus the full image name in `imageName`.
  */
 export function parseImageName(imageName) {
   let lines = imageName.split("\n");
-  lines.shift(); // "shield"
-  let parsed = Object.fromEntries(
-    orderedRouteAttributes.map((a, i) => [a, lines[i]])
-  );
-  parsed.imageName = imageName;
-  return parsed;
+  let [, network, ref] = lines[1].match(/^(.*?)=(.*)/) || [];
+  let name = lines[2];
+  return { imageName, network, ref, name };
 }
 
 let shieldTextField = ["format"];
@@ -107,7 +113,12 @@ export const shield = {
   },
   filter: [
     "any",
-    ...orderedRouteAttributes.map((a) => ["has", `route_1_${a}`]),
+    ["has", "route_1"],
+    ["has", "route_2"],
+    ["has", "route_3"],
+    ["has", "route_4"],
+    ["has", "route_5"],
+    ["has", "route_6"],
   ],
 };
 
