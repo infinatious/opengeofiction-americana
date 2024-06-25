@@ -251,7 +251,18 @@ export function loadShields() {
   shields["FSA:PQ"] = {
     spriteBlank: "shield_fsa_pq",
     textLayout: textConstraint("ellipse"),
-    textColor: Color.shields.black,
+    textColor: Color.shields.white,
+    padding: {
+      left: 4,
+      right: 4,
+      top: 4,
+      bottom: 6,
+    },
+  };
+  shields["FSA:PQ:ALT"] = {
+    spriteBlank: "shield_fsa_pq_alt",
+    textLayout: textConstraint("ellipse"),
+    textColor: Color.shields.white,
     padding: {
       left: 5,
       right: 5,
