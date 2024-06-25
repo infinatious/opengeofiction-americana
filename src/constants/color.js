@@ -1,4 +1,5 @@
 export const backgroundFill = `hsl(30, 44%, 96%)`;
+export const backgroundFill2 = `hsl(146, 68%, 89%)`;
 export const backgroundFillTranslucent = `hsla(30, 44%, 96%, 0.8)`;
 
 export const waterFill = "hsl(211, 50%, 85%)";
@@ -70,6 +71,9 @@ export const lightRailFill = "hsl(0, 0%, 50%)";
 export const tramFill = "hsl(0, 0%, 60%)";
 export const monorailFill = "hsl(0, 0%, 50%)";
 export const funicularFill = "hsl(0, 0%, 50%)";
+export const sandFill = "hsl(42, 46%, 93%)";
+export const grassFill = "hsl(151, 60%, 81%)";
+export const woodFill = "hsl(151, 60%, 78%)";
 
 export const hue = {
   tollRoad: 48,
