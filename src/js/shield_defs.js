@@ -234,7 +234,7 @@ export function loadShields() {
       bottom: 4,
     },
   };
-  shields["FSA:MK:Alt"] = banneredShield(shields["FSA:MK"], ["ALT"]);
+  shields["FSA:MK:ALT"] = banneredShield(shields["FSA:MK"], ["ALT"]);
 
   //Michisaukee
   shields["FSA:MC"] = {
@@ -247,6 +247,7 @@ export function loadShields() {
       bottom: 3,
     },
   };
+  shields["FSA:MC:Bus"] = banneredShield(shields["FSA:MC"], ["BUS"]);
 
   //Wisecota
   shields["FSA:WI"] = {
