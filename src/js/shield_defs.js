@@ -118,9 +118,9 @@ export function loadShields() {
       top: 3,
       bottom: 2,
     },
-    "banners": ["BUS"],
-    "bannerTextColor": Color.shields.green,
-    "bannerTextHaloColor": "#FFF",
+    //"banners": ["BUS"],
+    //"bannerTextColor": Color.shields.green,
+    //"bannerTextHaloColor": "#FFF",
   };
 
   // Tempache
