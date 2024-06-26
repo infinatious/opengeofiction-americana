@@ -234,6 +234,7 @@ export function loadShields() {
       bottom: 4,
     },
   };
+  shields["FSA:MK:Alt"] = banneredShield(shields["FSA:MK"], ["ALT"]);
 
   //Michisaukee
   shields["FSA:MC"] = {
