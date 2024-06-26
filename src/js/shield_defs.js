@@ -95,6 +95,7 @@ export function loadShields() {
     Color.shields.black
   );
 
+  //FS Routes
 
   shields["FSA:FS"] = {
     spriteBlank: ["shield_fsa_fs_2", "shield_fsa_fs_3"],
@@ -122,6 +123,9 @@ export function loadShields() {
     //"bannerTextColor": Color.shields.green,
     //"bannerTextHaloColor": "#FFF",
   };
+
+  shields["FSA:FS:Toll"] = banneredShield(shields["FSA:FS"], ["TOLL"]);
+
 
   // Tempache
   shields["FSA:TM"] = homePlateDownShield(
