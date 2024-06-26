@@ -46,7 +46,9 @@ let networks = [
 
   // FSA
   "FSA:FS",
+  "FSA:FS:Bus",
   "FSA:TM",
+  "FSA:TM:Spur",
   "FSA:S",
   "FSA:AW",
   "FSA:ME",
@@ -69,7 +71,8 @@ let networks = [
   "FSA:RP",
   "FSA:IL",
   "FSA:WY",
-  "FSA:AC"
+  "FSA:AC",
+  "DEO:OA" 
 ];
 
 // Uncomment for a list of all supported networks.  This makes for a very long page.
