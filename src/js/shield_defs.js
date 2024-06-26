@@ -409,6 +409,10 @@ export function loadShields() {
     },
   };
 
+  //Minnonigan FSA:MINN
+
+  //Minnonigan FSA:MINN:Toll
+
   // Other states as circles for now
   shields["FSA:WA"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:TA"] = pillShield(Color.shields.white, Color.shields.black);
