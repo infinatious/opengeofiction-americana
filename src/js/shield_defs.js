@@ -418,10 +418,10 @@ shields["DEO:OA"] = {
   spriteBlank: ["shield_deo_oa_1","shield_deo_oa_2","shield_deo_oa_3"],
   textColor: Color.shields.white,
   padding: {
-    left: 2,
-    right: 1,
-    top: 2,
-    bottom: 3,
+    left: 1,
+    right: 0,
+    top: 1,
+    bottom: 0,
   },
 };
 
