@@ -47,6 +47,7 @@ let networks = [
   // FSA
   "FSA:FS",
   "FSA:FS:Bus",
+  "FSA:FS:Toll",
   "FSA:TM",
   "FSA:TM:Spur",
   "FSA:TM:Bus",
@@ -70,10 +71,14 @@ let networks = [
   "FSA:HYC",
   "FSA:HYE",
   "FSA:HYW",
+  "FSA:HY:ALT",
   "FSA:RP",
   "FSA:IL",
   "FSA:WY",
   "FSA:AC",
+  "FSA:MINN",
+  "FSA:MINN:Toll",
+  "DEO:TDH",
   "DEO:OA" 
 ];
 
