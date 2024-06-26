@@ -381,6 +381,16 @@ export function loadShields() {
       bottom: 8,
     },
   };
+  shields["FSA:AQ"] = {
+    spriteBlank: "shield_fsa_wy",
+    textColor: "#d4aa00",
+    padding: {
+      left: 4,
+      right: 4,
+      top: 2,
+      bottom: 8,
+    },
+  };
 
   //Alcortez
   shields["FSA:AC"] = {
