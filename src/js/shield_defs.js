@@ -109,9 +109,9 @@ export function loadShields() {
   };
 
   shields["FSA:FS:Bus"] = {
-    spriteBlank: ["shield_fsa_fs_2", "shield_fsa_fs_3"],
+    spriteBlank: ["shield_fsa_fsbus_2", "shield_fsa_fsbus_3"],
     textLayout: textConstraint("ellipse"),
-    textColor: "#880000",
+    textColor: Color.shields.white,
     padding: {
       left: 2,
       right: 2,
