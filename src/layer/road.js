@@ -18,7 +18,7 @@ const minZoomSmallService = 15;
 const roadExp = 1.2;
 
 const roadHue = 345; //Default 0 
-const tollRoadHue = 48;
+const tollRoadHue = 22; //Default 48
 const buswayHue = 322;
 
 //Tunnel casing dash pattern
