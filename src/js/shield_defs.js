@@ -413,9 +413,27 @@ export function loadShields() {
     },
   };
 
-  //Minnonigan FSA:MINN
-
-  //Minnonigan FSA:MINN:Toll
+  //Minnonigan
+  shields["FSA:MINN"] = {
+    spriteBlank: ["shield_fsa_mn_2", "shield_fsa_mn_3"],
+    textColor: Color.shields.white,
+    padding: {
+      left: 5,
+      right: 2,
+      top: 5,
+      bottom: 3,
+    },
+  };
+  shields["FSA:MINN:Toll"] = {
+    spriteBlank: "shield_fsa_mn_tp",
+    textColor: Color.shields.black,
+    padding: {
+      left: 3,
+      right: 3,
+      top: 5,
+      bottom: 3,
+    },
+  };
 
   // Other states as circles for now
   shields["FSA:WA"] = pillShield(Color.shields.white, Color.shields.black);
