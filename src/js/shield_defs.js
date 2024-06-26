@@ -260,9 +260,6 @@ export function loadShields() {
       top: 2,
       bottom: 6,
     },
-    "banners": ["ALT"],
-    "bannerTextColor": "#000",
-    "bannerTextHaloColor": "#FFF",
   };
   shields["FSA:PQ:ALT"] = {
     spriteBlank: "shield_fsa_pq_alt",
@@ -274,6 +271,9 @@ export function loadShields() {
       top: 2,
       bottom: 6,
     },
+    "banners": ["ALT"],
+    "bannerTextColor": "#000",
+    "bannerTextHaloColor": "#FFF",
   };
 
   //Zakahigan
