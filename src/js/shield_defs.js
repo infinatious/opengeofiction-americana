@@ -347,6 +347,8 @@ export function loadShields() {
       bottom: 8,
     },
   };
+  shields["FSA:HY:ALT"] = banneredShield(shields["FSA:HY"], ["ALT"]);
+
 
   //Ruppacke
   shields["FSA:AG"] = {
@@ -425,6 +427,8 @@ export function loadShields() {
   };
 
 // Deodeca
+shields["DEO:TDH"] = roundedRectShield(Color.shields.green, Color.shields.white);
+
 
 //Ouanatchkan
 shields["DEO:OA"] = {
@@ -438,17 +442,7 @@ shields["DEO:OA"] = {
   },
 };
 
-//Ouanatchkan - but can be removed later due to mistake
-shields["FSA:OA"] = {
-  spriteBlank: ["shield_deo_oa_1","shield_deo_oa_2","shield_deo_oa_3"],
-  textColor: Color.shields.white,
-  padding: {
-    left: 1,
-    right: -2,
-    top: 1,
-    bottom: -2,
-  },
-};
+
 
 
 
