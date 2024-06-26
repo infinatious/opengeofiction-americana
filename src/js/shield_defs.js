@@ -108,6 +108,21 @@ export function loadShields() {
     },
   };
 
+  shields["FSA:FS:BUS"] = {
+    spriteBlank: ["shield_fsa_fs_2", "shield_fsa_fs_3"],
+    textLayout: textConstraint("ellipse"),
+    textColor: "#880000",
+    padding: {
+      left: 2,
+      right: 2,
+      top: 3,
+      bottom: 2,
+    },
+    "banners": ["BUS"],
+    "bannerTextColor": Color.shields.green,
+    "bannerTextHaloColor": "#FFF",
+  };
+
   // Tempache
   shields["FSA:TM"] = homePlateDownShield(
     5,
