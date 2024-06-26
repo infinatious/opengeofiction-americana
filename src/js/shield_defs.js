@@ -418,9 +418,9 @@ export function loadShields() {
     spriteBlank: ["shield_fsa_mn_2", "shield_fsa_mn_3"],
     textColor: Color.shields.white,
     padding: {
-      left: 5,
+      left: 6,
       right: 2,
-      top: 5,
+      top: 6,
       bottom: 3,
     },
   };
@@ -430,8 +430,8 @@ export function loadShields() {
     padding: {
       left: 3,
       right: 3,
-      top: 5,
-      bottom: 3,
+      top: 6,
+      bottom: 2.5,
     },
   };
 

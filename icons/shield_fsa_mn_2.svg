@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="20"
-   height="20"
+   width="33"
+   height="33"
    xml:space="preserve"
    version="1.1"
    id="svg1"
@@ -20,9 +20,9 @@
    inkscape:pageopacity="0.0"
    inkscape:pagecheckerboard="0"
    inkscape:deskcolor="#d1d1d1"
-   inkscape:zoom="1.3158815"
-   inkscape:cx="7.2194949"
-   inkscape:cy="-29.637926"
+   inkscape:zoom="10.527052"
+   inkscape:cx="9.736819"
+   inkscape:cy="12.72911"
    inkscape:window-width="1278"
    inkscape:window-height="1378"
    inkscape:window-x="0"
@@ -33,7 +33,7 @@
  
 <g
    id="g24"
-   transform="matrix(0.03109043,0,0,0.03109043,0.08746141,0.0482975)"><g
+   transform="matrix(0.05142495,0,0,0.05142495,0.091935,0.05277109)"><g
      transform="translate(319.78,319.78)"
      id="0gRDBj8OPrEi0IsB1-i77">
 <path
@@ -62,7 +62,7 @@
      transform="translate(306.93,290)"
      id="FTsN1Z9NSnzZJJUTZxru6">
 <path
-   style="opacity:1;fill:#ffffff;fill-opacity:0;fill-rule:nonzero;stroke:#ffffff;stroke-width:19.65234961;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+   style="opacity:1;fill:#ffffff;fill-opacity:0;fill-rule:nonzero;stroke:#ffffff;stroke-width:19.6523;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
    transform="translate(7.6822e-6)"
    d="m -146.93394,240 16.5076,-24.7614 c 2.27722,-3.41583 3.4924,-7.4293 3.4924,-11.53462 v -1.77979 0 c 0,-6.58555 -5.33864,-11.92419 -11.92419,-11.92419 h -21.28633 v 0 c -4.24169,0 -8.20274,-2.11989 -10.55561,-5.64919 L -244.33776,73.89427 v 0 c -1.69284,-2.53926 -2.59618,-5.52279 -2.59618,-8.5746 v -23.67445 0 c 0.01,-2.85475 1.28768,-5.55752 3.48731,-7.37722 2.19963,-1.8197 5.09394,-2.56826 7.9,-2.0432 l 22.93611,4.6185 v 0 c 8.96314,1.813 17.86812,-3.35476 20.74095,-12.03644 l 31.83233,-95.49698 v 0 c 1.95357,-5.8607 6.55246,-10.4596 12.41317,-12.41317 l 48.06236,-16.02079 v 0 c 1.7281,-0.57603 3.29834,-1.5465 4.58639,-2.83455 L 9.39454,-206.32849 v 0 c 2.35083,-2.35083 3.67151,-5.53924 3.67151,-8.86382 v -24.8077 h 60 v 20 h 60 v 60 h 109.5316 v 0 c 1.75381,0 3.33493,1.05647 4.00608,2.67678 0.67115,1.62031 0.30017,3.48537 -0.93996,4.7255 l -28.09721,28.09721 v 0 c -2.88163,2.88163 -4.50051,6.78996 -4.50051,10.8652 v 6.60406 0 c 0,4.50203 -1.78843,8.81967 -4.97184,12.00309 l -9.77262,9.77262 v 0 c -3.36506,3.36506 -7.92907,5.25554 -12.68799,5.25554 h -4.48238 v 0 c -5.17685,0 -10.14166,2.05649 -13.80224,5.71708 l -14.28292,14.28292"
    stroke-linecap="round"
