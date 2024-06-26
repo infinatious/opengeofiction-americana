@@ -383,7 +383,6 @@ export function loadShields() {
   shields["FSA:WA"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:TA"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:TN"] = pillShield(Color.shields.white, Color.shields.black);
-  shields["FSA:OA"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:PM"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:TI"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:SN"] = pillShield(Color.shields.white, Color.shields.black);
@@ -396,6 +395,21 @@ export function loadShields() {
     spriteBlank: "shield_fsa_rtc",
     notext: true,
   };
+
+// Deodeca
+
+//Ouanatchkan
+shields["DEO:OA"] = {
+  spriteBlank: ["shield_deo_oa_1","shield_deo_oa_2","shield_deo_oa_3"],
+  textColor: Color.shields.white,
+  padding: {
+    left: 2,
+    right: 1,
+    top: 2,
+    bottom: 3,
+  },
+};
+
 
 
 // Lutang
