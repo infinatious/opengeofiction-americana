@@ -446,7 +446,7 @@ export function loadShields() {
   };
 
   //Tennewa as Oregon
-  shields["FSA:TN"] = {
+  shields["FSA:TE"] = {
     spriteBlank: ["shield_us_or_2", "shield_us_or_3"],
     textColor: Color.shields.blue,
     colorLighten: Color.shields.blue,
@@ -466,8 +466,8 @@ export function loadShields() {
   shields["FSA:SN"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:NC"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:OQ"] = pillShield(Color.shields.white, Color.shields.black);
-  shields["FSA:TE"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:WS"] = pillShield(Color.shields.white, Color.shields.black);
+  shields["FSA:OA"] = pillShield(Color.shields.white, Color.shields.black);
 
   // County
   shields["FSA:CR"] = pentagonUpShield(
