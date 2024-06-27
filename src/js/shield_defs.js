@@ -475,8 +475,18 @@ export function loadShields() {
     textColor: "#203d1c",
     padding: {
       left: 2,
-      right: 6,
-      top: 4,
+      right: 7,
+      top: 6,
+      bottom: 8,
+    },
+  };
+  shields["FSA:TN"] = {
+    spriteBlank: "shield_fsa_te",
+    textColor: "#203d1c",
+    padding: {
+      left: 2,
+      right: 7,
+      top: 6,
       bottom: 8,
     },
   };
