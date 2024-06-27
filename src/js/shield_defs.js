@@ -458,6 +458,18 @@ export function loadShields() {
       bottom: 4,
     },
   };
+  shields["FSA:TN"] = {
+    spriteBlank: ["shield_us_or_2", "shield_us_or_3"],
+    textColor: Color.shields.blue,
+    colorLighten: Color.shields.blue,
+    textLayout: textConstraint("ellipse"),
+    padding: {
+      left: 1,
+      right: 1,
+      top: 1,
+      bottom: 4,
+    },
+  };
 
   // Other states as circles for now
   shields["FSA:WA"] = pillShield(Color.shields.white, Color.shields.black);
