@@ -438,17 +438,30 @@ export function loadShields() {
     spriteBlank: "shield_fsa_mn_tp",
     textColor: Color.shields.black,
     padding: {
-      left: 3,
-      right: 3,
+      left: 4,
+      right: 4,
       top: 6,
       bottom: 2.5,
+    },
+  };
+
+  //Tennewa as Oregon
+  shields["FSA:TN"] = {
+    spriteBlank: ["shield_us_or_2", "shield_us_or_3"],
+    textColor: Color.shields.blue,
+    colorLighten: Color.shields.blue,
+    textLayout: textConstraint("ellipse"),
+    padding: {
+      left: 1,
+      right: 1,
+      top: 1,
+      bottom: 4,
     },
   };
 
   // Other states as circles for now
   shields["FSA:WA"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:TA"] = pillShield(Color.shields.white, Color.shields.black);
-  shields["FSA:TN"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:PM"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:SN"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:NC"] = pillShield(Color.shields.white, Color.shields.black);
