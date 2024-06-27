@@ -178,6 +178,16 @@ export function loadShields() {
       bottom: 2,
     },
   };
+  shields["FSA:ME:HMR"] = {
+    spriteBlank: "shield_fsa_me_hmr",
+    textColor: Color.shields.black,
+    padding: {
+      left: 2,
+      right: 2,
+      top: 5,
+      bottom: 2,
+    },
+  };
 
   //Alormen
   shields["FSA:AL"] = {

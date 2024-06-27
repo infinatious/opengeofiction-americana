@@ -54,6 +54,7 @@ let networks = [
   "FSA:S",
   "FSA:AW",
   "FSA:ME",
+  "FSA:ME:HMR",
   "FSA:AL",
   "FSA:CL",
   "FSA:RS",
