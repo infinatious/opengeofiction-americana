@@ -321,6 +321,16 @@ export function loadShields() {
       bottom: 8,
     },
   };
+  shields["FSA:TI"] = {
+    spriteBlank: "shield_fsa_hy",
+    textColor: "#000000",
+    padding: {
+      left: 6,
+      right: 8,
+      top: 6,
+      bottom: 8,
+    },
+  };
   shields["FSA:HYC"] = {
     spriteBlank: "shield_fsa_hy_cty",
     textColor: "#000000",
@@ -440,11 +450,11 @@ export function loadShields() {
   shields["FSA:TA"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:TN"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:PM"] = pillShield(Color.shields.white, Color.shields.black);
-  shields["FSA:TI"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:SN"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:NC"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:OQ"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:TE"] = pillShield(Color.shields.white, Color.shields.black);
+  shields["FSA:WS"] = pillShield(Color.shields.white, Color.shields.black);
 
   // County
   shields["FSA:CR"] = pentagonUpShield(
