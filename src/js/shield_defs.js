@@ -444,6 +444,7 @@ export function loadShields() {
   shields["FSA:SN"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:NC"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:OQ"] = pillShield(Color.shields.white, Color.shields.black);
+  shields["FSA:TE"] = pillShield(Color.shields.white, Color.shields.black);
 
   // County
   shields["FSA:CR"] = pentagonUpShield(
