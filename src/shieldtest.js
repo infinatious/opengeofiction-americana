@@ -79,6 +79,7 @@ let networks = [
   "FSA:AC",
   "FSA:MINN",
   "FSA:MINN:Toll",
+  "FSA:TE",
   "FSA:CR",
   "DEO:TDH",
   "DEO:OA" 

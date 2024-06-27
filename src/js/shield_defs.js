@@ -455,8 +455,8 @@ export function loadShields() {
     },
   };
 
-  //Tennewa as Oregon
-  shields["FSA:TE"] = {
+  //Eustacia as Oregon
+  shields["FSA:EU"] = {
     spriteBlank: ["shield_us_or_2", "shield_us_or_3"],
     textColor: Color.shields.blue,
     colorLighten: Color.shields.blue,
@@ -468,16 +468,16 @@ export function loadShields() {
       bottom: 4,
     },
   };
-  shields["FSA:TN"] = {
-    spriteBlank: ["shield_us_or_2", "shield_us_or_3"],
-    textColor: Color.shields.blue,
-    colorLighten: Color.shields.blue,
-    textLayout: textConstraint("ellipse"),
+
+  //Tennewa
+  shields["FSA:TE"] = {
+    spriteBlank: "shield_fsa_te",
+    textColor: "#203d1c",
     padding: {
-      left: 1,
-      right: 1,
-      top: 1,
-      bottom: 4,
+      left: 2,
+      right: 6,
+      top: 4,
+      bottom: 8,
     },
   };
 
