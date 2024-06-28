@@ -248,6 +248,16 @@ export function loadShields() {
       bottom: 4,
     },
   };
+  shields["FSA:Makaska State Highways"] = {
+    spriteBlank: "shield_fsa_mk",
+    textColor: Color.shields.black,
+    padding: {
+      left: 4,
+      right: 4,
+      top: 5,
+      bottom: 4,
+    },
+  };
   shields["FSA:MK:ALT"] = banneredShield(shields["FSA:MK"], ["ALT"]);
 
   //Michisaukee
