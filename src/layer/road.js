@@ -260,8 +260,8 @@ const roadCasingColorTrunkExpressway = [
   "trunk",
   [
     ...tollSelector,
-    `hsl(${tollRoadHue}, 77%, 50%)`,
-    `hsl(${roadHue}, 77%, 50%)`,
+    `hsl(${tollRoadHue}, 48%, 50%)`,
+    `hsl(${roadHue}, 48%, 50%)`,
   ],
 ];
 
@@ -321,7 +321,7 @@ const highwayFillColor = [
       ],
       [
         ...tollSelector,
-        `hsl(${tollRoadHue}, 77%, 50%)`,
+        `hsl(${tollRoadHue}, 48%, 50%)`,
         `hsl(${roadHue}, 48%, 50%)`,
       ],
     ],
@@ -691,14 +691,14 @@ class Trunk extends Road {
       5,
       [
         ...tollSelector,
-        `hsl(${tollRoadHue}, 77%, 50%)`,
-        `hsl(${roadHue}, 77%, 50%)`,
+        `hsl(${tollRoadHue}, 48%, 50%)`,
+        `hsl(${roadHue}, 48%, 50%)`,
       ],
       9,
       [
         ...tollSelector,
-        `hsl(${tollRoadHue}, 77%, 50%)`,
-        `hsl(${roadHue}, 77%, 50%)`,
+        `hsl(${tollRoadHue}, 48%, 50%)`,
+        `hsl(${roadHue}, 48%, 50%)`,
       ],
       15,
       [
