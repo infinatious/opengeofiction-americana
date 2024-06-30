@@ -306,7 +306,7 @@ const roadFillColorTunnel = [
     ],
   ],
 ];
-
+//PK - Highway fill here
 const highwayFillColor = [
   ...roadFillColorTunnel,
   [
@@ -322,7 +322,7 @@ const highwayFillColor = [
       [
         ...tollSelector,
         `hsl(${tollRoadHue}, 77%, 50%)`,
-        `hsl(${roadHue}, 77%, 50%)`,
+        `hsl(${roadHue}, 48%, 50%)`,
       ],
     ],
     [
