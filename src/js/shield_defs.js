@@ -505,12 +505,12 @@ export function loadShields() {
   //Oakley
   shields["FSA:OA"] = {
     spriteBlank: "shield_fsa_oa",
-    textColor: Color.shields.white,
+    textColor: Color.shields.black,
     padding: {
       left: 3,
       right: 3,
-      top: 8,
-      bottom: 8,
+      top: 10,
+      bottom: 10,
     },
   };
 
@@ -542,7 +542,7 @@ export function loadShields() {
 
 // Deodeca
 shields["DEO:TDH"] = {
-  spriteBlank: ["shield_deo_oa_1","shield_deo_tdh_2"],
+  spriteBlank: ["shield_deo_tdh_1","shield_deo_tdh_2"],
   textColor: Color.shields.white,
   padding: {
     left: 1,
@@ -566,7 +566,7 @@ shields["DEO:OA"] = {
 
 //Agawaskway
 shields["Deodeca:AA"] = {
-  spriteBlank: ["shield_deo_aa_1","shield_deo_aa_2","shield_deo_aa_3"],
+  spriteBlank: ["shield_deo_aa"],
   textColor: Color.shields.white,
   padding: {
     left: 1,
