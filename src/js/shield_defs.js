@@ -1,3 +1,4 @@
+
 "use strict";
 
 import * as Color from "../constants/color.js";
@@ -501,6 +502,18 @@ export function loadShields() {
     },
   };
 
+  //Oakley
+  shields["FSA:OA"] = {
+    spriteBlank: "shield_fsa_oa",
+    textColor: Color.shields.white,
+    padding: {
+      left: 3,
+      right: 3,
+      top: 8,
+      bottom: 8,
+    },
+  };
+
   // Other states as circles for now
   shields["FSA:WA"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:TA"] = pillShield(Color.shields.white, Color.shields.black);
@@ -509,7 +522,6 @@ export function loadShields() {
   shields["FSA:NC"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:OQ"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:WS"] = pillShield(Color.shields.white, Color.shields.black);
-  shields["FSA:OA"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:LN"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:FL"] = pillShield(Color.shields.white, Color.shields.black);
 
@@ -529,8 +541,16 @@ export function loadShields() {
   };
 
 // Deodeca
-shields["DEO:TDH"] = roundedRectShield(Color.shields.green, Color.shields.white);
-
+shields["DEO:TDH"] = {
+  spriteBlank: ["shield_deo_oa_1","shield_deo_tdh_2"],
+  textColor: Color.shields.white,
+  padding: {
+    left: 1,
+    right: 1,
+    top: 1,
+    bottom: 1,
+  },
+};
 
 //Ouanatchkan
 shields["DEO:OA"] = {
@@ -544,6 +564,17 @@ shields["DEO:OA"] = {
   },
 };
 
+//Agawaskway
+shields["Deodeca:AA"] = {
+  spriteBlank: ["shield_deo_aa_1","shield_deo_aa_2","shield_deo_aa_3"],
+  textColor: Color.shields.white,
+  padding: {
+    left: 1,
+    right: 1,
+    top: 1,
+    bottom: 1,
+  },
+};
 
 
 

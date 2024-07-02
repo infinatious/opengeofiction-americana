@@ -80,9 +80,11 @@ let networks = [
   "FSA:MINN",
   "FSA:MINN:Toll",
   "FSA:TE",
+  "FSA:OA",
   "FSA:CR",
   "DEO:TDH",
-  "DEO:OA" 
+  "Deodeca:AA",
+  "DEO:OA"
 ];
 
 // Uncomment for a list of all supported networks.  This makes for a very long page.
