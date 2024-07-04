@@ -409,6 +409,8 @@ export function loadShields() {
 
   //Illuvia
   shields["FSA:IL"] = pillShield(Color.shields.white, Color.shields.black);
+  shields["FSA:IL:Bus"] = banneredShield(shields["FSA:IL"], ["BUS"]);
+
 
   //Wychelle 
   shields["FSA:WY"] = {
