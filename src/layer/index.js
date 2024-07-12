@@ -120,6 +120,11 @@ export function build(locales) {
 
     lyrRoad.roadSimpleCasing.casing(),
 
+    lyrRoad.stepsCasing,
+    lyrRoad.pedestrianCasing,
+    lyrRoad.steps,
+    lyrRoad.pedestrian,
+
     lyrRoad.motorwayLink.fill(),
     lyrRoad.roadLinkSimpleFill.fill(),
     lyrRoad.primaryLink.fill(),
@@ -142,6 +147,8 @@ export function build(locales) {
     lyrRoad.motorway.fill(),
 
     lyrRoad.road.surface(),
+
+    lyrRoad.path,
 
     lyrRail.rail.dashes(),
     lyrRail.railService.dashes(),
@@ -224,6 +231,10 @@ export function build(locales) {
 
   layers.push(
     //The labels at the end of the list draw on top of the layers at the beginning.
+    
+    lyrRoad.bridgePathCasing,
+    lyrRoad.bridgePath,
+    
     lyrAerialway.liftCasing,
     lyrAerialway.lift,
 
