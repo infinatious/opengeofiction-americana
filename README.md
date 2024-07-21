@@ -1,6 +1,6 @@
-# OpenStreetMap Americana
+# OpenGeoFiction Americana
 
-_A quintessentially American map style_ [🗺 View the map](https://zelonewolf.github.io/openstreetmap-americana/)
+_A quintessentially American map style_ [🗺 View the map](https://ogf.infinatio.us)
 
 <img src="doc-img/osm-americana-logo.png" alt="Americana map style logo" width="200"/>
 
@@ -66,22 +66,14 @@ The dynamic shield generator is included as a [module](shieldlib/README.md) in t
 
 The OpenStreetMap Americana style is built upon the [OpenMapTiles schema](https://openmaptiles.org/schema/), which includes:
 
-- Feature data from OpenStreetMap
-- Translated name labels from [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page) for places, POIs, airports, roads, bodies of water, parks, and mountain peaks.
-- Low-zoom ocean/water, boundary, and urbanized area data from [Natural Earth](https://www.naturalearthdata.com/).
+- Feature data from OpenGeoFiction.
 
 The legend’s “Route markers” section is labeled using labels of Wikidata items that are tagged with the [corresponding OSM tag](https://www.wikidata.org/wiki/Property:P1282).
 
 ## Coverage
 
-Americana is compatible with vector tiles covering the entire world.
-
-Americana displays custom route shields for routes in all U.S. states and territories, and for routes in the following countries:
-
-<img src="doc-img/shield_map_world.svg" width="500" alt="Countries">
-
-We are hoping that it will support more countries; you can [help us](https://github.com/ZeLonewolf/openstreetmap-americana/projects/1)!
+Please contact infinatious on Discord if you would like to have your shield added. It must be in SVG format. Routes must be network tagged to be supported. For mappers in the FSA, some of the network tagging can happen automatically, so many states are supported by default.
 
 ## Tile Server
 
-Although the source code in this repository is dedicated to the public domain under a CC0 waiver, it is configured by default to load map tiles from a privately-donated community [tile server](https://tile.ourmap.us). This server is available for use by other hobbyist and community projects with constraints. See the [tile server usage policy](TILE_USAGE.md) for more details. This usage policy describes the allowable usage of the tiles for other projects, separate from this style or the application being developed in this repository.
+Although the source code in this repository is dedicated to the public domain under a CC0 waiver, it is configured by default to load map tiles from infinatious's OGF OpenMapTiles [tile server](https://ogfvector.infinatio.us). This server is available for use by other hobbyist and community projects with constraints. See the [tile server usage policy](TILE_USAGE.md) for more details. This usage policy describes the allowable usage of the tiles for other projects, separate from this style or the application being developed in this repository.

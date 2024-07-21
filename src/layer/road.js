@@ -1343,3 +1343,232 @@ export const legendEntries = [
     filter: isUnpaved,
   },
 ];
+
+export const path = {
+  "id": "highway-path",
+  "type": "line",
+  "metadata": {
+    "mapbox:group": "1444849345966.4436"
+  },
+  "source": "openmaptiles",
+  "source-layer": "transportation",
+  "filter": [
+    "all",
+    ["==", "$type", "LineString"],
+    [
+      "!in",
+      "brunnel",
+      "bridge",
+      "tunnel"
+    ],
+    ["==", "class", "path"],
+    [
+      "!in",
+      "subclass",
+      "steps",
+      "pedestrian"
+    ]
+  ],
+  "paint": {
+    "line-color": "#cba",
+    "line-dasharray": [1.5, 0.75],
+    "line-width": {
+      "base": 1.2,
+      "stops": [[15, 1.2], [20, 4]]
+    }
+  }
+}
+
+export const pedestrian = {
+  "id": "highway-path-pedestrian",
+  "type": "line",
+  "source": "openmaptiles",
+  "source-layer": "transportation",
+  "filter": [
+    "all",
+    ["==", "$type", "LineString"],
+    ["==", "class", "path"],
+    ["==", "subclass", "pedestrian"]
+  ],
+  "layout": {
+    "line-join": "bevel",
+    "line-cap": "butt"
+  },
+  "paint": {
+    "line-color": "rgba(237, 237, 237, 1)",
+    "line-opacity": 1,
+    "line-width": {
+      "base": 1.2,
+      "stops": [
+        [13.5, 0],
+        [14, 2.5],
+        [20, 11.5]
+      ]
+    }
+  }
+}
+
+export const steps = {
+  "id": "highway-path-steps",
+  "type": "line",
+  "source": "openmaptiles",
+  "source-layer": "transportation",
+  "filter": [
+    "all",
+    ["==", "$type", "LineString"],
+    [
+      "!in",
+      "brunnel",
+      "bridge",
+      "tunnel"
+    ],
+    ["==", "class", "path"],
+    ["==", "subclass", "steps"]
+  ],
+  "layout": {
+    "line-join": "bevel",
+    "line-cap": "butt"
+  },
+  "paint": {
+    "line-color": "#fff",
+    "line-opacity": 1,
+    "line-width": {
+      "base": 1.2,
+      "stops": [
+        [13.5, 0],
+        [14, 1.25],
+        [20, 5.75]
+      ]
+    },
+    "line-dasharray": [0.5, 0.25]
+  }
+}
+
+export const pedestrianCasing = {
+  "id": "highway-path-pedestrian-casing",
+  "type": "line",
+  "source": "openmaptiles",
+  "source-layer": "transportation",
+  "filter": [
+    "all",
+    ["==", "$type", "LineString"],
+    [
+      "!in",
+      "brunnel",
+      "bridge",
+      "tunnel"
+    ],
+    ["==", "class", "path"],
+    ["in", "subclass", "pedestrian"]
+  ],
+  "layout": {
+    "line-cap": "butt",
+    "line-join": "round"
+  },
+  "paint": {
+    "line-color": "#cfcdca",
+    "line-opacity": {
+      "stops": [[12, 0], [12.5, 1]]
+    },
+    "line-width": {
+      "base": 1.2,
+      "stops": [
+        [12, 0.5],
+        [13, 1],
+        [14, 4],
+        [20, 15]
+      ]
+    }
+  }
+}
+
+export const stepsCasing = {
+  "id": "highway-path-steps-casing",
+  "type": "line",
+  "source": "openmaptiles",
+  "source-layer": "transportation",
+  "filter": [
+    "all",
+    ["==", "$type", "LineString"],
+    [
+      "!in",
+      "brunnel",
+      "bridge",
+      "tunnel"
+    ],
+    ["==", "class", "path"],
+    ["in", "subclass", "steps"]
+  ],
+  "layout": {
+    "line-cap": "butt",
+    "line-join": "round"
+  },
+  "paint": {
+    "line-color": "#cfcdca",
+    "line-opacity": {
+      "stops": [[12, 0], [12.5, 1]]
+    },
+    "line-width": {
+      "base": 1.2,
+      "stops": [
+        [12, 0.5],
+        [13, 1],
+        [14, 2],
+        [20, 9.25]
+      ]
+    }
+  }
+}
+
+export const bridgePath = {
+  "id": "bridge-path",
+  "type": "line",
+  "metadata": {
+    "mapbox:group": "1444849334699.1902"
+  },
+  "source": "openmaptiles",
+  "source-layer": "transportation",
+  "filter": [
+    "all",
+    ["==", "$type", "LineString"],
+    ["==", "brunnel", "bridge"],
+    ["==", "class", "path"],
+    [
+      "!in",
+      "subclass",
+      "steps",
+      "pedestrian"
+    ]
+  ],
+  "paint": {
+    "line-color": "#cba",
+    "line-dasharray": [1.5, 0.75],
+    "line-width": {
+      "base": 1.2,
+      "stops": [[15, 1.2], [20, 4]]
+    }
+  }
+}
+
+export const bridgePathCasing = {
+  "id": "bridge-path-casing",
+  "type": "line",
+  "metadata": {
+    "mapbox:group": "1444849334699.1902"
+  },
+  "source": "openmaptiles",
+  "source-layer": "transportation",
+  "filter": [
+    "all",
+    ["==", "$type", "LineString"],
+    ["==", "brunnel", "bridge"],
+    ["==", "class", "path"]
+  ],
+  "paint": {
+    "line-color": "#cfcdca",
+    "line-width": {
+      "base": 1.2,
+      "stops": [[15, 1.2], [20, 18]]
+    }
+  }
+}
