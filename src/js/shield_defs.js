@@ -517,10 +517,9 @@ export function loadShields() {
   };
 
   //New Carnaby
-  shields["FSA:FS:NC"] = {
+  shields["FSA:NC"] = {
     spriteBlank: ["shield_fsa_nc"],
-    textLayout: textConstraint("rectangle"),
-    textColor: Color.shields.white,
+    textColor: Color.shields.black,
     padding: {
       left: 2,
       right: 2,
