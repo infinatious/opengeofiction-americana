@@ -516,12 +516,24 @@ export function loadShields() {
     },
   };
 
+  //New Carnaby
+  shields["FSA:FS:NC"] = {
+    spriteBlank: ["shield_fsa_nc"],
+    textLayout: textConstraint("rectangle"),
+    textColor: Color.shields.white,
+    padding: {
+      left: 2,
+      right: 2,
+      top: 4,
+      bottom: 4,
+    }
+  };
+
   // Other states as circles for now
   shields["FSA:WA"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:TA"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:PM"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:SN"] = pillShield(Color.shields.white, Color.shields.black);
-  shields["FSA:NC"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:OQ"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:WS"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:LN"] = pillShield(Color.shields.white, Color.shields.black);
