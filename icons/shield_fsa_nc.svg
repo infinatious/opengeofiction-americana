@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="31.780275"
-   height="22.905615"
-   viewBox="0 0 8.4090609 6.0608257"
+   width="29.294985"
+   height="21.242628"
+   viewBox="0 0 7.751453 5.6207994"
    version="1.1"
    id="svg3"
-   sodipodi:docname="shield_fsa_nc_3.svg"
+   sodipodi:docname="shield_fsa_nc.svg"
    inkscape:version="1.3 (0e150ed, 2023-07-21)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -23,17 +23,18 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="10.867113"
-     inkscape:cx="15.321457"
-     inkscape:cy="12.606845"
+     inkscape:cx="15.505498"
+     inkscape:cy="12.790886"
      inkscape:window-width="1280"
      inkscape:window-height="1097"
-     inkscape:window-x="522"
+     inkscape:window-x="520"
      inkscape:window-y="44"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg3" />
   <g
-     transform="matrix(0.0059449,0,0,0.0059449,-0.75054362,-0.73865382)"
-     id="g2">
+     transform="matrix(0.00539406,0,0,0.00539406,-0.6202224,-0.60943428)"
+     id="g2"
+     style="stroke-width:50.035;stroke-dasharray:none">
     <path
        d="M 207.4,138 H 642.048 L 833.5,281.813 1024.95,138 h 434.65 c 37.22,0 67.4,30.174 67.4,67.396 V 1062.6 c 0,37.23 -30.18,67.4 -67.4,67.4 H 1024.95 L 833.5,986.187 642.048,1130 H 207.4 c -37.224,0 -67.4,-30.17 -67.4,-67.4 V 205.396 C 140,168.174 170.176,138 207.4,138 Z"
        stroke="#000000"
@@ -41,6 +42,7 @@
        stroke-miterlimit="8"
        fill="#ffffff"
        fill-rule="evenodd"
-       id="path1" />
+       id="path1"
+       style="stroke-width:50.035;stroke-dasharray:none" />
   </g>
 </svg>
