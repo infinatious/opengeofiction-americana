@@ -659,6 +659,18 @@ shields['Lutang:BB'] = {
   },
 }
 
+// Navenna
+
+shields["NA:A"] = roundedRectShield(
+  "#c20114",
+  Color.shields.white
+);
+
+shields["NA:N"] = roundedRectShield(
+  "#ffbd00",
+  Color.shields.black
+);
+
 // This needs to be at the bottom
 
   return {

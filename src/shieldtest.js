@@ -85,7 +85,9 @@ let networks = [
   "FSA:CR",
   "DEO:TDH",
   "Deodeca:AA",
-  "DEO:OA"
+  "DEO:OA",
+  "NA:A",
+  "NA:N"
 ];
 
 // Uncomment for a list of all supported networks.  This makes for a very long page.
