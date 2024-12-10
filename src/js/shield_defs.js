@@ -566,7 +566,7 @@ export function loadShields() {
   };
 
 // Deodeca
-shields["DEO:TDH","Deodeca:TDH"] = {
+shields["DEO:TDH"] = {
   spriteBlank: ["shield_deo_tdh_1","shield_deo_tdh_2"],
   textColor: Color.shields.white,
   padding: {
@@ -576,6 +576,18 @@ shields["DEO:TDH","Deodeca:TDH"] = {
     bottom: 1,
   },
 };
+
+shields["Deodeca:TDH"] = {
+  spriteBlank: ["shield_deo_tdh_1","shield_deo_tdh_2"],
+  textColor: Color.shields.white,
+  padding: {
+    left: 1,
+    right: 1,
+    top: 1,
+    bottom: 1,
+  },
+};
+
 
 //Ouanatchkan
 shields["DEO:OA"] = {
