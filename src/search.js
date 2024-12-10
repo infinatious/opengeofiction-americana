@@ -146,7 +146,7 @@ function search(e) {
   }
 
   let position = map.getCenter();
-  let searchQuery = new URL("https://ogfnominatim-api.infinatio.us/");
+  let searchQuery = new URL("https://ogfphoton.infinatio.us/");
   console.log(map.getZoom());
 
   //Low zoom: generate "generic" search results
