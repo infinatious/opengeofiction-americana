@@ -566,7 +566,7 @@ export function loadShields() {
   };
 
 // Deodeca
-shields["DEO:TDH"] = {
+shields["DEO:TDH","Deodeca:TDH"] = {
   spriteBlank: ["shield_deo_tdh_1","shield_deo_tdh_2"],
   textColor: Color.shields.white,
   padding: {
