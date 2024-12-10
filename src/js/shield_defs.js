@@ -537,6 +537,18 @@ export function loadShields() {
   shields["FSA:WS"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:LN"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:FL"] = pillShield(Color.shields.white, Color.shields.black);
+  shields["FSA:TJ"] = pillShield(Color.shields.white, Color.shields.black);
+  shields["FSA:IR"] = pillShield(Color.shields.white, Color.shields.black);
+  shields["FSA:OP"] = pillShield(Color.shields.white, Color.shields.black);
+  shields["FSA:OC"] = pillShield(Color.shields.white, Color.shields.black);
+  shields["FSA:EW"] = pillShield(Color.shields.white, Color.shields.black);
+  shields["FSA:PQ"] = pillShield(Color.shields.white, Color.shields.black);
+  shields["FSA:DI"] = pillShield(Color.shields.white, Color.shields.black);
+  shields["FSA:WH"] = pillShield(Color.shields.white, Color.shields.black);
+  shields["FSA:OG"] = pillShield(Color.shields.white, Color.shields.black);
+  shields["FSA:OT"] = pillShield(Color.shields.white, Color.shields.black);
+  shields["FSA:CN"] = pillShield(Color.shields.white, Color.shields.black);
+  shields["FSA:PA"] = pillShield(Color.shields.white, Color.shields.black);
 
   // County
   shields["FSA:CR"] = pentagonUpShield(
