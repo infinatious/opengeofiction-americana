@@ -540,6 +540,9 @@ export function loadShields() {
     }
   };
 
+
+  
+
   //Rougemont
   shields["FSA:RM"] = diamondShield(
     Color.shields.white,
@@ -548,6 +551,8 @@ export function loadShields() {
     2,
     24
   );
+  shields["FSA:RM:Alt"] = banneredShield(shields["FSA:RM"], ["ALT"]);
+
 
 
   // Other states as circles for now
