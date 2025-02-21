@@ -572,7 +572,7 @@ export function loadShields() {
   shields["FSA:CN"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:PA"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:DP"] = pillShield(Color.shields.white, Color.shields.black);
-  shields["FSA:M"] = pillShield(Color.shields.white, Color.shields.black);-
+  shields["FSA:M"] = pillShield(Color.shields.white, Color.shields.black);
 
 
   // County
