@@ -530,7 +530,7 @@ export function loadShields() {
 
   //Passitania
   shields["FSA:PS"] = {
-    spriteBlank: ["shield_fsa_ps"],
+    spriteBlank: ["shield_fsa_ps", "shield_fsa_ps_3"],
     textColor: Color.shields.black,
     padding: {
       left: 3,
