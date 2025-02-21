@@ -528,6 +528,28 @@ export function loadShields() {
     }
   };
 
+  //Passitania
+  shields["FSA:PS"] = {
+    spriteBlank: ["shield_fsa_ps"],
+    textColor: Color.shields.black,
+    padding: {
+      left: 3,
+      right: 3,
+      top: 10,
+      bottom: 10,
+    }
+  };
+
+  //Rougemont
+  shields["FSA:RM"] = diamondShield(
+    Color.shields.white,
+    Color.shields.black,
+    Color.shields.black,
+    2,
+    24
+  );
+
+
   // Other states as circles for now
   shields["FSA:WA"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:TA"] = pillShield(Color.shields.white, Color.shields.black);
@@ -549,6 +571,9 @@ export function loadShields() {
   shields["FSA:OT"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:CN"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:PA"] = pillShield(Color.shields.white, Color.shields.black);
+  shields["FSA:DP"] = pillShield(Color.shields.white, Color.shields.black);
+  shields["FSA:M"] = pillShield(Color.shields.white, Color.shields.black);-
+
 
   // County
   shields["FSA:CR"] = pentagonUpShield(
