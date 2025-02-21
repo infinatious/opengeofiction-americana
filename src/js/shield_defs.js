@@ -564,7 +564,6 @@ export function loadShields() {
   shields["FSA:OP"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:OC"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:EW"] = pillShield(Color.shields.white, Color.shields.black);
-  shields["FSA:PQ"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:DI"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:WH"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:OG"] = pillShield(Color.shields.white, Color.shields.black);
