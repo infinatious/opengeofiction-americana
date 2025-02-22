@@ -539,9 +539,7 @@ export function loadShields() {
       bottom: 10,
     }
   };
-
-
-  
+  shields["FSA:PS:TOLL"] = banneredShield(shields["FSA:PS"], ["TOLL"]);  
 
   //Rougemont
   shields["FSA:RM"] = diamondShield(
