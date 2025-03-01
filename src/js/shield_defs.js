@@ -551,6 +551,20 @@ export function loadShields() {
   );
   shields["FSA:RM:Alt"] = banneredShield(shields["FSA:RM"], ["ALT"]);
 
+  //Des Plaines
+  shields["FSA:DP"] = {
+    spriteBlank: ["shield_fsa_dp_2", "shield_fsa_dp_3"],
+    textColor: Color.shields.white,
+    padding: {
+      left: 2,
+      right: 2,
+      top: 2,
+      bottom: 6,
+    },
+  };
+
+
+
 
 
   // Other states as circles for now
@@ -573,7 +587,6 @@ export function loadShields() {
   shields["FSA:OT"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:CN"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:PA"] = pillShield(Color.shields.white, Color.shields.black);
-  shields["FSA:DP"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:M"] = pillShield(Color.shields.white, Color.shields.black);
 
 
