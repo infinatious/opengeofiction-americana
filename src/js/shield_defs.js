@@ -559,7 +559,7 @@ export function loadShields() {
       left: 2,
       right: 2,
       top: 3,
-      bottom: 7,
+      bottom: 8,
     },
   };
 
