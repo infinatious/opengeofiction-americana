@@ -136,6 +136,10 @@ export function loadShields() {
   );
   shields["FSA:TM:Spur"] = banneredShield(shields["FSA:TM"], ["SPUR"]);
   shields["FSA:TM:Bus"] = banneredShield(shields["FSA:TM"], ["BUS"]);
+  shields["FSA:TM:Turnpike"] = {
+    spriteBlank: "shield_fsa_tm_tp",
+    notext: true,
+  };
 
 
   // Sierra
