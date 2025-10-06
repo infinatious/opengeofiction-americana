@@ -587,7 +587,7 @@ export function loadShields() {
       left: 4,
       right: 4,
       top: 2,
-      bottom: 8,
+      bottom: 10,
     },
   };
 
@@ -617,7 +617,6 @@ export function loadShields() {
   shields["FSA:FL"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:TJ"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:IR"] = pillShield(Color.shields.white, Color.shields.black);
-  shields["FSA:OC"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:EW"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:DI"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:WH"] = pillShield(Color.shields.white, Color.shields.black);
@@ -625,6 +624,7 @@ export function loadShields() {
   shields["FSA:OT"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:CN"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:M"] = pillShield(Color.shields.white, Color.shields.black);
+  shields["FSA:MG"] = pillShield(Color.shields.white, Color.shields.black);
 
 
   // County
