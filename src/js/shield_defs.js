@@ -567,6 +567,41 @@ export function loadShields() {
     },
   };
 
+  //Opelika
+  shields["FSA:OP"] = {
+    spriteBlank: ["shield_fsa_op_2", "shield_fsa_op_3"],
+    textColor: Color.shields.black,
+    padding: {
+      left: 2,
+      right: 2,
+      top: 6,
+      bottom: 2,
+    },
+  };
+  
+  //Pass 
+  shields["FSA:PA"] = {
+    spriteBlank: "shield_fsa_pa",
+    textColor: Color.shields.black,
+    padding: {
+      left: 4,
+      right: 4,
+      top: 2,
+      bottom: 8,
+    },
+  };
+
+    //Orange Coast
+  shields["FSA:OC"] = {
+    spriteBlank: "shield_fsa_oc",
+    textColor: Color.shields.white,
+    padding: {
+      left: 2,
+      right: 2,
+      top: 6,
+      bottom: 2,
+    },
+  };
 
 
 
@@ -582,7 +617,6 @@ export function loadShields() {
   shields["FSA:FL"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:TJ"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:IR"] = pillShield(Color.shields.white, Color.shields.black);
-  shields["FSA:OP"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:OC"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:EW"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:DI"] = pillShield(Color.shields.white, Color.shields.black);
@@ -590,7 +624,6 @@ export function loadShields() {
   shields["FSA:OG"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:OT"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:CN"] = pillShield(Color.shields.white, Color.shields.black);
-  shields["FSA:PA"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:M"] = pillShield(Color.shields.white, Color.shields.black);
 
 
