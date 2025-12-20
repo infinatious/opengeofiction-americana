@@ -772,6 +772,35 @@ shields["NA:N"] = roundedRectShield(
   Color.shields.black
 );
 
+// Qennes
+
+shields["QN:AP"] = homePlateDownShield(
+    5,
+    "#2146b2",
+    Color.shields.white
+  );
+
+shields["QN:R"] = homePlateDownShield(
+    5,
+    "#0084a5",
+    Color.shields.white
+  );
+
+shields["QN:PN"] = roundedRectShield(
+  "#e20040",
+  Color.shields.white
+);
+
+shields["QN:PR"] = roundedRectShield(
+  "#ffb51b",
+  Color.shields.black
+);
+
+shields["QN:PP"] = roundedRectShield(
+  Color.shields.white,
+  Color.shields.black
+);
+
 // This needs to be at the bottom
 
   return {

@@ -95,6 +95,11 @@ let networks = [
   "DEO:OA",
   "NA:A",
   "NA:N",
+  "QN:AP",
+  "QN:R",
+  "QN:PN",
+  "QN:PR",
+  "QN:PP",
   "FSA:RTC",
   "FSA:TM:Turnpike"
 ];
