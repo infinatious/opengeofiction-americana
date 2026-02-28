@@ -603,9 +603,18 @@ export function loadShields() {
     },
   };
 
-
-
-
+  //Costa Dorada
+  shields["FSA:CD"] = {
+    spriteBlank: ["shield_fsa_cd_2", "shield_fsa_cd_3"],
+    textColor: Color.shields.black,
+    padding: {
+      left: 8,
+      right: 3,
+      top: 6,
+      bottom: 6,
+    },
+  };
+  
   // Other states as circles for now
   shields["FSA:WA"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:TA"] = pillShield(Color.shields.white, Color.shields.black);
