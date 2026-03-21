@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="35.911999"
+   height="25"
+   viewBox="0 0 9.5023149 6.615"
+   version="1.1"
+   id="svg3"
+   sodipodi:docname="shield_fsa_fs_3.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs3" />
+  <sodipodi:namedview
+     id="namedview3"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="33.37544"
+     inkscape:cx="16.733862"
+     inkscape:cy="14.906171"
+     inkscape:window-width="1268"
+     inkscape:window-height="1355"
+     inkscape:window-x="26"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg3" />
+  <path
+     d="M 0.20415323,3.3188389 1.9936303,0.19355142 H 7.5404531 L 9.3299927,3.3188389 7.5404531,6.4441264 H 1.9936303 Z"
+     stroke="#003e86"
+     stroke-width="0.257836"
+     stroke-miterlimit="8"
+     fill="#ffffff"
+     fill-rule="evenodd"
+     id="path1-1"
+     style="display:inline" />
+  <path
+     id="path3-2"
+     style="display:inline;fill:#960000;fill-opacity:1;stroke-width:0.0125012"
+     d="M 1.5230004,5.1503977 2.1069809,6.2005289 H 7.4274047 L 8.0108684,5.1503977 Z" />
+  <path
+     id="path2-2"
+     style="display:inline;fill:#960000;fill-opacity:1;stroke-width:0.0125012"
+     d="M 2.1069809,0.43721016 1.5230004,1.4997445 h 6.487868 L 7.4274047,0.43721016 Z" />
+</svg>
