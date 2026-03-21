@@ -404,6 +404,7 @@ export const state = {
       base: 1.2,
       stops: [
         [3, 8],
+        [5, 9],
         [6, 14],
       ],
     },
@@ -425,15 +426,17 @@ export const state = {
   },
   source: "openmaptiles",
   maxzoom: 7,
-  minzoom: 3,
+  minzoom: 4,
   "source-layer": "place",
 };
 export const countryOther = {
   id: "place_country-other",
+  minzoom: 2,
+  maxzoom: 8,
   type: "symbol",
   paint: {
     "text-color": "#334",
-    "text-halo-blur": 0.5,
+    "text-halo-blur": labelHaloBlur,
     "text-halo-color": labelHaloColor,
     "text-halo-width": ["interpolate", ["linear"], ["zoom"], 3, 1.5, 7, 2.5],
   },
@@ -443,20 +446,22 @@ export const countryOther = {
     ["!", ["has", "iso_a2"]],
   ],
   layout: {
-    "text-font": ["Americana-Regular"],
+    "text-font": ["Americana-Bold"],
     "text-size": {
       stops: [
-        [3, 9],
-        [7, 15],
+        [2, 11],
+        [3, 13],   // was 9
+        [7, 17],   // was 15
       ],
     },
     "text-field": localizedName,
     "text-max-width": 6.25,
-    "text-transform": "none",
+    "text-transform": "uppercase",
   },
   source: "openmaptiles",
   "source-layer": "place",
 };
+
 export const country3 = {
   id: "place_country-3",
   type: "symbol",
