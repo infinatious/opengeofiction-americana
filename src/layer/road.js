@@ -17,8 +17,8 @@ const minZoomSmallService = 15;
 //Exponent base for inter-zoom interpolation
 const roadExp = 1.2;
 
-const roadHue = 0;
-const tollRoadHue = 48;
+const roadHue = 212;
+const tollRoadHue = 212;
 const buswayHue = 322;
 
 //Tunnel casing dash pattern
@@ -253,10 +253,10 @@ const roadCasingColorTunnel = [
       ...tollSelector,
       [
         ...expresswaySelector,
-        `hsl(${tollRoadHue}, 41%, 85%)`,
-        `hsl(${tollRoadHue}, 41%, 80%)`,
+        `hsl(${tollRoadHue}, 0%, 85%)`,
+        `hsl(${tollRoadHue}, 0%, 80%)`,
       ],
-      `hsl(${roadHue}, 41%, 80%)`,
+      `hsl(${roadHue}, 0%, 80%)`,
     ],
     ["primary", "secondary", "tertiary", "busway", "bus_guideway"],
     "hsl(0, 0%, 80%)",
@@ -269,8 +269,8 @@ const roadCasingColorTrunkExpressway = [
   "trunk",
   [
     ...tollSelector,
-    `hsl(${tollRoadHue}, 77%, 50%)`,
-    `hsl(${roadHue}, 77%, 50%)`,
+    `hsl(${tollRoadHue}, 0%, 50%)`,
+    `hsl(${roadHue}, 0%, 50%)`,
   ],
 ];
 
@@ -297,17 +297,17 @@ const roadFillColorTunnel = [
     "motorway",
     [
       ...tollSelector,
-      `hsl(${tollRoadHue}, 71%, 90%)`,
-      `hsl(${roadHue}, 71%, 90%)`,
+      `hsl(${tollRoadHue}, 0%, 90%)`,
+      `hsl(${roadHue}, 0%, 90%)`,
     ],
     "trunk",
     [
       ...tollSelector,
-      `hsl(${tollRoadHue}, 77%, 90%)`,
-      `hsl(${roadHue}, 77%, 90%)`,
+      `hsl(${tollRoadHue}, 0%, 90%)`,
+      `hsl(${roadHue}, 0%, 90%)`,
     ],
     ["busway", "bus_guideway"],
-    `hsl(${buswayHue}, 25%, 93%)`,
+    `hsl(${buswayHue}, 0%, 93%)`,
     [
       ...tollSelector,
       `hsl(${tollRoadHue}, 100%, 95%)`,
@@ -325,13 +325,13 @@ const highwayFillColor = [
       ...expresswaySelector,
       [
         ...tollSelector,
-        `hsl(${tollRoadHue}, 95%, 95%)`,
-        `hsl(${roadHue}, 95%, 95%)`,
+        `hsl(212, 0%, 85%)`,
+        `hsl(212, 0%, 85%)`,
       ],
       [
         ...tollSelector,
-        `hsl(${tollRoadHue}, 77%, 50%)`,
-        `hsl(${roadHue}, 77%, 50%)`,
+        `hsl(212, 0%, 80%)`,
+        `hsl(212, 0%, 80%)`,
       ],
     ],
     [
@@ -405,9 +405,9 @@ function expresswayCasingColor(minZoom, transitionZoom) {
     ["exponential", roadExp],
     ["zoom"],
     minZoom,
-    `hsl(0, 0%, 75%)`,
+    `hsl(0, 0%, 85%)`,
     transitionZoom,
-    `hsl(0, 0%, 23%)`,
+    `hsl(0, 0%, 50%)`,
   ];
 }
 
@@ -616,36 +616,18 @@ class Motorway extends Road {
     this.constraints = ["all", ["==", getClass, "motorway"], isNotLink];
     this.sortKey = motorwaySortKey;
     this.minZoomFill = minZoomAllRoads;
-    this.minZoomCasing = minZoomAllRoads;
+    this.minZoomCasing = 6.5;
 
     this.fillColor = [
-      "interpolate",
-      ["exponential", roadExp],
+      "step",
       ["zoom"],
-      4,
-      [
-        ...tollSelector,
-        `hsl(${tollRoadHue}, 70%, 76%)`,
-        `hsl(${roadHue}, 70%, 76%)`,
-      ],
-      6,
-      [
-        ...tollSelector,
-        `hsl(${tollRoadHue}, 70%, 66%)`,
-        `hsl(${roadHue}, 70%, 66%)`,
-      ],
-      minzoomBrunnel - 0.5,
-      [
-        ...tollSelector,
-        `hsl(${tollRoadHue}, 70%, 60%)`,
-        `hsl(${roadHue}, 70%, 60%)`,
-      ],
-      14,
-      [
-        ...tollSelector,
-        `hsl(${tollRoadHue}, 71%, 45%)`,
-        `hsl(${roadHue}, 71%, 35%)`,
-      ],
+      `hsl(212, 62%, 71%)`,
+      8,
+      `hsl(212, 20%, 60%)`,
+      11,
+      `hsl(212, 20%, 60%)`,
+      15,
+      `hsl(212, 0%, 77%)`,
     ];
     this.casingColor = [
       "interpolate",
@@ -654,26 +636,26 @@ class Motorway extends Road {
       4,
       [
         ...tollSelector,
-        `hsl(${tollRoadHue}, 10%, 85%)`,
-        `hsl(${roadHue}, 10%, 85%)`,
+        `hsl(212, 0%, 85%)`,
+        `hsl(0, 0%, 85%)`,
       ],
       6,
       [
         ...tollSelector,
-        `hsl(${tollRoadHue}, 60%, 50%)`,
-        `hsl(${roadHue}, 60%, 50%)`,
+        `hsl(212, 0%, 50%)`,
+        `hsl(212, 0%, 50%)`,
       ],
       minzoomBrunnel - 0.5,
       [
         ...tollSelector,
-        `hsl(${tollRoadHue}, 71%, 40%)`,
-        `hsl(${roadHue}, 71%, 40%)`,
+        `hsl(212, 0%, 40%)`,
+        `hsl(212, 0%, 40%)`,
       ],
       14,
       [
         ...tollSelector,
-        `hsl(${tollRoadHue}, 51%, 9%)`,
-        `hsl(${roadHue}, 51%, 9%)`,
+        `hsl(212, 0%, 9%)`,
+        `hsl(212, 0%, 9%)`,
       ],
     ];
   }
@@ -686,13 +668,28 @@ class Trunk extends Road {
       "all",
       ["==", getClass, "trunk"],
       isNotLink,
-      isNotExpressway,
     ];
 
     this.minZoomFill = minZoomAllRoads;
-    this.minZoomCasing = minZoomAllRoads;
+    this.minZoomCasing = 7.2;
 
-    this.fillColor = highwayFillColor;
+    this.fillColor = [
+      "match",
+      getExpressway,
+      1,
+      `hsl(212, 0%, 80%)`, // expressway: stays flat grey (handled by RoadSimpleFill)
+      [
+        "step",
+        ["zoom"],
+        `hsl(212, 61%, 78%)`,  // zoom < 8: same saturated blue as motorway
+        8,
+        `hsl(212, 20%, 60%)`,  // zoom 8–11: muted blue
+        11,
+        `hsl(212, 20%, 60%)`,  // zoom 11–15: same
+        15,
+        `hsl(0, 0%, 80%)`,   // zoom 15+: desaturated, near-white
+      ],
+    ];
     this.casingColor = [
       "interpolate",
       ["exponential", roadExp],
@@ -700,20 +697,20 @@ class Trunk extends Road {
       5,
       [
         ...tollSelector,
-        `hsl(${tollRoadHue}, 77%, 50%)`,
-        `hsl(${roadHue}, 77%, 50%)`,
+        `hsl(${tollRoadHue}, 0%, 70%)`,
+        `hsl(${roadHue}, 0%, 70%)`,
       ],
       9,
       [
         ...tollSelector,
-        `hsl(${tollRoadHue}, 77%, 50%)`,
-        `hsl(${roadHue}, 77%, 50%)`,
+        `hsl(${tollRoadHue}, 0%, 70%)`,
+        `hsl(${roadHue}, 0%, 50%)`,
       ],
       15,
       [
         ...tollSelector,
-        `hsl(${tollRoadHue}, 70%, 18%)`,
-        `hsl(${roadHue}, 70%, 18%)`,
+        `hsl(${tollRoadHue}, 0%, 40%)`,
+        `hsl(${roadHue}, 0%, 40%)`,
       ],
     ];
   }
@@ -960,6 +957,8 @@ class MotorwayLink extends Motorway {
     this.constraints = ["all", ["==", getClass, "motorway"], isLink];
     this.minZoomFill = minZoomPrimary;
     this.minZoomCasing = minZoomPrimary;
+    this.fillColor = `hsl(212, 0%, 80%)`;
+    this.casingColor = `hsl(212, 0%, 60%)`;
   }
 }
 
@@ -969,6 +968,7 @@ class TrunkLink extends Trunk {
     this.constraints = ["all", ["==", getClass, "trunk"], isLink];
     this.minZoomFill = minZoomPrimary;
     this.minZoomCasing = minZoomPrimary;
+    this.fillColor = `hsl(212, 0%, 85%)`;
   }
 }
 
@@ -976,6 +976,13 @@ class PrimaryLink extends Primary {
   constructor() {
     super();
     this.constraints = ["all", ["==", getClass, "primary"], isLink, isNotToll];
+    this.casingColor = [
+      "match",
+      getExpressway,
+      1,
+      expresswayCasingColor(this.minZoomCasing, this.minZoomCasing + 2),
+      roadCasingColor,
+    ];
   }
 }
 
@@ -983,6 +990,13 @@ class PrimaryLinkToll extends PrimaryToll {
   constructor() {
     super();
     this.constraints = ["all", ["==", getClass, "primary"], isLink, isToll];
+    this.casingColor = [
+      "match",
+      getExpressway,
+      1,
+      expresswayCasingColor(this.minZoomCasing, this.minZoomCasing + 2),
+      roadCasingColor,
+    ];
   }
 }
 
@@ -995,6 +1009,13 @@ class SecondaryLink extends Secondary {
       isLink,
       isNotToll,
     ];
+    this.casingColor = [
+      "match",
+      getExpressway,
+      1,
+      expresswayCasingColor(this.minZoomCasing, this.minZoomCasing + 2),
+      roadCasingColor,
+    ];
   }
 }
 
@@ -1002,6 +1023,13 @@ class SecondaryLinkToll extends SecondaryToll {
   constructor() {
     super();
     this.constraints = ["all", ["==", getClass, "secondary"], isLink, isToll];
+    this.casingColor = [
+      "match",
+      getExpressway,
+      1,
+      expresswayCasingColor(this.minZoomCasing, this.minZoomCasing + 2),
+      roadCasingColor,
+    ];
   }
 }
 
@@ -1009,6 +1037,13 @@ class TertiaryLink extends Tertiary {
   constructor() {
     super();
     this.constraints = ["all", ["==", getClass, "tertiary"], isLink, isNotToll];
+    this.casingColor = [
+      "match",
+      getExpressway,
+      1,
+      expresswayCasingColor(this.minZoomCasing, this.minZoomCasing + 2),
+      roadCasingColor,
+    ];
   }
 }
 
@@ -1016,6 +1051,13 @@ class TertiaryLinkToll extends TertiaryToll {
   constructor() {
     super();
     this.constraints = ["all", ["==", getClass, "tertiary"], isLink, isToll];
+    this.casingColor = [
+      "match",
+      getExpressway,
+      1,
+      expresswayCasingColor(this.minZoomCasing, this.minZoomCasing + 2),
+      roadCasingColor,
+    ];
   }
 }
 
