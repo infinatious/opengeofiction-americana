@@ -53,7 +53,11 @@ const smallServiceSelector = [
   ["get", "service"],
   ["parking_aisle", "driveway"],
 ];
-const isUnpaved = ["==", ["get", "surface"], "unpaved"];
+const isUnpaved = [
+  "any",
+  ["==", ["get", "surface"], "unpaved"],
+  ["==", ["get", "class"], "track"],
+];
 
 function combineConstraints(constraint1, constraint2) {
   if (constraint1 == null) {
@@ -135,6 +139,7 @@ function filterRoad(brunnel, constraints) {
         "bus_guideway",
         "minor",
         "service",
+        "track",
       ],
     ],
   ];
@@ -925,7 +930,7 @@ class Minor extends Road {
     super();
     this.constraints = [
       "all",
-      ["in", getClass, ["literal", ["minor", "service"]]],
+      ["in", getClass, ["literal", ["minor", "service", "track"]]],
       isNotToll,
     ];
 
