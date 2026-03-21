@@ -22,6 +22,7 @@ import * as lyrWater from "./water.js";
 import * as lyrBuilding from "./building.js";
 import * as lyrHighwayExit from "./highway_exit.js";
 import * as lyrFerry from "./ferry.js";
+import * as lyrLandcover from "./landcover.js";
 
 /**
  * Builds the Americana layers property.
@@ -40,10 +41,29 @@ export function build(locales) {
     lyrPark.cemeteryFill,
     lyrPark.parkFill,
 
+    lyrLandcover.sandFill,
+    lyrLandcover.grassFill,
+    lyrLandcover.heath,
+    lyrLandcover.scrub,
+    lyrLandcover.rock,
+    lyrLandcover.glacier,
+    lyrLandcover.woodFill,
+    lyrLandcover.farmland,
+    lyrLandcover.wetland,
+
     lyrBoundary.countyCasing,
     lyrBoundary.regionCasing,
     lyrBoundary.stateCasing,
     lyrBoundary.countryCasing,
+
+    lyrLanduse.residential,
+    lyrLanduse.retail,
+    lyrLanduse.commercial,
+    lyrLanduse.industrial,
+    lyrLanduse.school,
+    lyrLanduse.sports,
+    lyrLanduse.quarry,
+    lyrLanduse.military,
 
     lyrHillshade.hillshading,
 
