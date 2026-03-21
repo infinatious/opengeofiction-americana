@@ -149,7 +149,7 @@ function search(e) {
   }
 
   let position = map.getCenter();
-  let searchQuery = new URL("https://photon.komoot.io/api/?limit=3");
+  let searchQuery = new URL("https://ogfphoton.infinatio.us/api/");
   console.log(map.getZoom());
 
   //Low zoom: generate "generic" search results
