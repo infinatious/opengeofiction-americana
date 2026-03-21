@@ -15,6 +15,7 @@ const motorwayToTertiary = [
 ];
 const motorwayToMinor = [...motorwayToTertiary, "minor"];
 const motorwayToService = [...motorwayToMinor, "service"];
+const motorwayToTrack = [...motorwayToService, "track"];
 
 const majorConstruction = ["motorway_construction", "trunk_construction"];
 const minorConstruction = [
@@ -81,7 +82,7 @@ export const label = {
       13,
       [...classSelector, motorwayToMinor, 1, ["ferry", "aerialway"], 1, 0],
       14,
-      [...classSelector, motorwayToService, 1, ["ferry", "aerialway"], 1, 0],
+      [...classSelector, motorwayToTrack, 1, ["ferry", "aerialway"], 1, 0],
       15,
       1,
     ],
@@ -92,7 +93,7 @@ export const label = {
     [
       "literal",
       [
-        ...motorwayToService,
+        ...motorwayToTrack,
         ...majorConstruction,
         ...minorConstruction,
         "ferry",
