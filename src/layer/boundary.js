@@ -38,6 +38,7 @@ export const countyCasing = {
         [12, 6],
       ],
     },
+    "line-opacity": 0.5,
   },
   filter: [
     "all",
@@ -89,6 +90,7 @@ export const regionCasing = {
         [9, 6],
       ],
     },
+    "line-opacity": 0.5,
   },
   filter: [
     "all",
@@ -146,6 +148,12 @@ export const stateCasing = {
         [3, 4],
         [12, 20],
         [16, 30],
+      ],
+    },
+    "line-opacity": {
+      stops: [
+        [3, 0.4],
+        [7, 0.6],
       ],
     },
   },
@@ -227,8 +235,8 @@ export const countryCasing = {
     "line-opacity": {
       base: 1,
       stops: [
-        [0, 0.4],
-        [4, 1],
+        [0, 0.2],
+        [4, 0.6],
       ],
     },
     "line-width": {
