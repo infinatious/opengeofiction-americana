@@ -214,8 +214,8 @@ export function build(locales) {
     lyrAerialway.liftCasing,
     lyrAerialway.lift,
 
-    lyrBoundary.countryLabelLeft,
-    lyrBoundary.countryLabelRight,
+    // lyrBoundary.countryLabelLeft, //Due to incorrect data in OGF OpenMapTiles schema
+    // lyrBoundary.countryLabelRight,
     lyrWater.waterwayLabel,
 
     lyrTransportationLabel.bridgeSpacer,
