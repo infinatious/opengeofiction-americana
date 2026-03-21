@@ -5,20 +5,32 @@ const maxConcurrencyCardinality = 8;
 
 export function getImageNameExpression(routeIndex) {
   let concat = ["concat", "shield"];
-  for (let attr of orderedRouteAttributes) {
-    concat.push("\n");
-    concat.push(["coalesce", ["get", `route_${routeIndex}_${attr}`], ""]);
-  }
+  // OGF: parse combined "route_N" field "network=ref" into parts
+  concat.push("\n");
+  concat.push([
+    "coalesce",
+    ["slice", ["get", `route_${routeIndex}`], 0,
+      ["index-of", "=", ["get", `route_${routeIndex}`]]],
+    ""
+  ]); // network
+  concat.push("\n");
+  concat.push([
+    "coalesce",
+    ["slice", ["get", `route_${routeIndex}`],
+      ["+", ["index-of", "=", ["get", `route_${routeIndex}`]], 1]],
+    ""
+  ]); // ref
+  concat.push("\n"); // name (empty)
+  concat.push("");
+  concat.push("\n"); // color (empty)
+  concat.push("");
   return concat;
 }
 
 function routeConcurrency(routeIndex) {
   return [
     "case",
-    [
-      "any",
-      ...orderedRouteAttributes.map((a) => ["has", `route_${routeIndex}_${a}`]),
-    ],
+    ["has", `route_${routeIndex}`],
     ["image", getImageNameExpression(routeIndex)],
     ["literal", ""],
   ];
@@ -106,8 +118,5 @@ export const shield = {
       1,
     ],
   },
-  filter: [
-    "any",
-    ...orderedRouteAttributes.map((a) => ["has", `route_1_${a}`]),
-  ],
+  filter: ["has", "route_1"],
 };
