@@ -91,11 +91,11 @@ export function loadShields() {
   };
 
   // Default
-
-  shields["default"] = {
-    textColor: Color.shields.black,
-    textHaloColor: Color.backgroundFill,
-  };
+  
+  shields["default"] = roundedRectShield(
+    Color.shields.white,
+    Color.shields.black
+  );
 
   let escutcheonCrossbarShield = {
     spriteBlank: [
