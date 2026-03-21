@@ -44,7 +44,7 @@ export const heath = {
     ["==", "subclass", "heath"]
   ],
   "paint": {
-    "fill-color": Color.grassFill,
+    "fill-color": Color.heathFill,
     "fill-opacity": 1
   }
 }
