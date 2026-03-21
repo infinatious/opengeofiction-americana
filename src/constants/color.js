@@ -4,7 +4,7 @@ export const backgroundFillTranslucent = `hsla(30, 44%, 96%, 0.8)`;
 export const hillshadeShadow = "hsla(30, 14%, 63%, 1)";
 export const hillshadeHighlight = "hsla(30, 44%, 99%, 1)";
 
-export const waterFill = "hsl(211, 50%, 85%)";
+export const waterFill = "hsl(195, 85%, 76%)";
 export const waterFillTranslucent = "hsla(211, 50%, 85%, 0.5)";
 export const waterIntermittentFill = "hsla(211, 60%, 85%, 0.3)";
 export const waterIntermittentOutline = "hsl(211, 100%, 30%)";
@@ -19,7 +19,7 @@ export const border = "hsl(0, 2%, 47%)";
 export const borderCasing = `hsl(${hueBorderCasing}, 35%, 86%)`;
 
 //Greenspace colors
-export const parkFill = "hsl(136, 41%, 89%)";
+export const parkFill = "hsl(91, 60%, 84%)";
 export const cemeteryFill = "hsl(80, 18%, 87%)";
 export const parkOutline = "hsla(136, 41%, 70%, 50%)";
 export const cemeteryOutline = "hsla(80, 23%, 62%, 45%)";
