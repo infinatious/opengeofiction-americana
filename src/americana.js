@@ -70,7 +70,7 @@ function shieldDefLoad(shields) {
   map.addControl(new search.PhotonSearchControl(), "top-left");
   map.addControl(new maplibregl.NavigationControl(), "top-left");
   map.addControl(new maplibregl.GlobeControl(), "top-left");
-  map.addControl(new HillshadeControl(), "top-left");
+  // map.addControl(new HillshadeControl(), "top-left");
 
   window.addEventListener("languagechange", (event) => {
     map.localize();
