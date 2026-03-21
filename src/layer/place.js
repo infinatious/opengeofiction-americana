@@ -576,14 +576,15 @@ export const continent = {
   },
   filter: ["==", ["get", "class"], "continent"],
   layout: {
-    "text-font": ["Americana-Regular"],
-    "text-size": 13,
+    "text-font": ["Americana-Bold"],
+    "text-size": 15,
     "text-field": localizedName,
     "text-justify": "center",
     "text-transform": "uppercase",
+    "text-letter-spacing": 0.15,
   },
   source: "openmaptiles",
-  maxzoom: 1,
+  maxzoom: 4,
   "source-layer": "place",
 };
 
