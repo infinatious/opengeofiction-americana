@@ -85,11 +85,11 @@ export const monorailFill = "hsl(0, 0%, 50%)";
 export const funicularFill = "hsl(0, 0%, 50%)";
 
 //Additional customized layers
-export const sandFill = "hsl(43, 100%, 94%)";
-export const heathFill = "hsl(55, 76%, 89%)";
-export const grassFill = "hsl(86, 72%, 77%)";
+export const sandFill = "hsl(44, 55%, 90%)";
+export const heathFill = "hsl(54, 58%, 85%)";
+export const scrubFill = "hsl(91, 60%, 80%)";
+export const grassFill = "hsl(91, 60%, 84%)";
 export const woodFill = "hsl(97, 54%, 73%)";
-export const scrubFill = "hsl(70, 68%, 84%)";
 export const farmlandFill = "hsl(55, 58%, 88%)";
 export const wetlandFill = "hsl(91, 60%, 88%)";
 export const rockFill = "hsl(30, 47%, 94%)";
