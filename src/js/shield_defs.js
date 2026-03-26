@@ -4655,7 +4655,14 @@ export function loadShields() {
   );
 
   //Apawiland
-  shields["FSA:AW","FSA:TJ"] = diamondShield(
+  shields["FSA:AW"] = diamondShield(
+    "hsl(359, 43%, 19%)",
+    "hsl(45, 89%, 63%)",
+    "hsl(45, 89%, 63%)",
+    2,
+    24
+  );
+  shields["FSA:TJ"] = diamondShield(
     "hsl(359, 43%, 19%)",
     "hsl(45, 89%, 63%)",
     "hsl(45, 89%, 63%)",
@@ -4738,7 +4745,7 @@ export function loadShields() {
   };
 
   //Makaska
-  shields["FSA:MK", "FSA:Makaska State Highways"] = {
+  shields["FSA:MK"] = {
     spriteBlank: "shield_fsa_mk",
     textColor: Color.shields.black,
     padding: {
@@ -4879,7 +4886,17 @@ export function loadShields() {
 
 
   //Ruppacke
-  shields["FSA:AG","FSA:RP"] = {
+  shields["FSA:RP"] = {
+    spriteBlank: ["shield_fsa_ag_2", "shield_fsa_ag_3"],
+    textColor: "#004a7f",
+    padding: {
+      left: 2,
+      right: 2,
+      top: 6,
+      bottom: 2,
+    },
+  };
+  shields["FSA:AG"] = {
     spriteBlank: ["shield_fsa_ag_2", "shield_fsa_ag_3"],
     textColor: "#004a7f",
     padding: {
@@ -4898,7 +4915,17 @@ export function loadShields() {
 
 
   //Wychelle 
-  shields["FSA:WY", "FSA:AQ"] = {
+  shields["FSA:WY"] = {
+    spriteBlank: "shield_fsa_wy",
+    textColor: "#d4aa00",
+    padding: {
+      left: 4,
+      right: 4,
+      top: 2,
+      bottom: 8,
+    },
+  };
+    shields["FSA:AQ"] = {
     spriteBlank: "shield_fsa_wy",
     textColor: "#d4aa00",
     padding: {
@@ -4960,7 +4987,7 @@ export function loadShields() {
 
 
   //Tennewa
-  shields["FSA:TE","FSA:TN"] = {
+  shields["FSA:TE"] = {
     spriteBlank: "shield_fsa_te",
     textColor: "#203d1c",
     padding: {
@@ -5085,7 +5112,7 @@ export function loadShields() {
   };
   
   // Other states as circles for now
-  shields["FSA:WA", "FSA:GC", "FSA:IC", "FSA:MI", "FSA:TA", "FSA:PM", "FSA:SN", "FSA:OQ", "FSA:WS", "FSA:OK", "FSA:PO", "FSA:VE"] = pillShield(Color.shields.white, Color.shields.black);
+  shields["FSA:WA"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:LN"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:FL"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:IR"] = pillShield(Color.shields.white, Color.shields.black);
@@ -5101,6 +5128,18 @@ export function loadShields() {
   shields["FSA:Ardelia"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:AS"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:EM"] = pillShield(Color.shields.white, Color.shields.black);
+  shields["FSA:GC"] = pillShield(Color.shields.white, Color.shields.black);
+  shields["FSA:IC"] = pillShield(Color.shields.white, Color.shields.black);
+  shields["FSA:MI"] = pillShield(Color.shields.white, Color.shields.black);
+  shields["FSA:TA"] = pillShield(Color.shields.white, Color.shields.black);
+  shields["FSA:PM"] = pillShield(Color.shields.white, Color.shields.black);
+  shields["FSA:SN"] = pillShield(Color.shields.white, Color.shields.black);
+  shields["FSA:OQ"] = pillShield(Color.shields.white, Color.shields.black);
+  shields["FSA:WS"] = pillShield(Color.shields.white, Color.shields.black);
+  shields["FSA:OK"] = pillShield(Color.shields.white, Color.shields.black);
+  shields["FSA:PO"] = pillShield(Color.shields.white, Color.shields.black);
+  shields["FSA:VE"] = pillShield(Color.shields.white, Color.shields.black);
+  
 
   // Bannered circles
   shields["FSA:LN:TOLL"] = banneredShield(shields["FSA:LN"], ["TOLL"]);
@@ -5132,13 +5171,23 @@ shields["Deodeca:TDH"] = {
     left: 1,
     right: 1,
     top: 1,
-    bottom: 1,
+    bottom: 4,
   },
 };
 
 
 //Ouanatchkan
-shields["Deodeca:OA", "Deodeca:DEO:OA"] = {
+shields["Deodeca:OA"] = {
+  spriteBlank: ["shield_deo_oa_1","shield_deo_oa_2","shield_deo_oa_3"],
+  textColor: Color.shields.white,
+  padding: {
+    left: 1,
+    right: -2,
+    top: 1,
+    bottom: -2,
+  },
+};
+shields["Deodeca:DEO:OA"] = {
   spriteBlank: ["shield_deo_oa_1","shield_deo_oa_2","shield_deo_oa_3"],
   textColor: Color.shields.white,
   padding: {
