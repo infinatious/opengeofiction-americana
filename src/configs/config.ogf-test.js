@@ -13,6 +13,8 @@ const ATTRIBUTION_LOGO = `
   style="padding: 10px;"
   />
 </a>`;
+const ATTRIBUTION_TEXT =
+  '<a href="https://opengeofiction.net" target="_blank">&copy; OpenGeofiction contributors</a>';
 
 /*
 The following two variables override the color of the bounding box and halo of
@@ -32,5 +34,7 @@ export default {
   OPENMAPTILES_URL,
   SHIELD_TEXT_BBOX_COLOR,
   SHIELD_TEXT_HALO_COLOR_OVERRIDE,
+  ATTRIBUTION_LOGO,
+  ATTRIBUTION_TEXT,
   // FONT_URL,
 };
