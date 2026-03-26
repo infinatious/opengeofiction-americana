@@ -616,7 +616,7 @@ class Motorway extends Road {
     this.constraints = ["all", ["==", getClass, "motorway"], isNotLink];
     this.sortKey = motorwaySortKey;
     this.minZoomFill = minZoomAllRoads;
-    this.minZoomCasing = 6.5;
+    this.minZoomCasing = 6;
 
     this.fillColor = [
       "step",
