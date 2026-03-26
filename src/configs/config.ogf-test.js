@@ -5,6 +5,14 @@ OpenMapTiles vector tiles, hosted by OpenStreetMap US
 */
 const OPENMAPTILES_URL =
   "https://ogfvector-test.infinatio.us/data/openmaptiles.json";
+const ATTRIBUTION_LOGO = `
+<a href="https://opengeofiction.net">
+  <img src="https://opengeofiction.net/assets/osm_logo-d621af7a73a07ad6abb9617a9ab397682b788b9d90221afa998a0f1744b7295a.svg"
+  alt="OGF logo"
+  width=40
+  style="padding: 10px;"
+  />
+</a>`;
 
 /*
 The following two variables override the color of the bounding box and halo of
