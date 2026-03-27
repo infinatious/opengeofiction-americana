@@ -5210,6 +5210,19 @@ shields["Deodeca:AA"] = {
   },
 };
 
+//Nawagan
+shields["Deodeca:NW"] = {
+  spriteBlank: ["shield_deo_nw"],
+  textColor: Color.shields.white,
+  padding: {
+    left: 4,
+    right: 4,
+    top: 5,
+    bottom: 1,
+  },
+};
+
+
 
 
 
