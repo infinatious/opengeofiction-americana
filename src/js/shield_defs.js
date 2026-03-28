@@ -5111,6 +5111,26 @@ export function loadShields() {
     },
   };
   
+  //Gnaerey
+  shields["FSA:GY"] = pillShield(Color.shields.white, Color.shields.black);
+  shields["FSA:GY:WM"] = banneredShield(shields["FSA:GY"], ["WM"]);
+  shields["FSA:GY:EM"] = banneredShield(shields["FSA:GY"], ["WM"]);
+  shields["FSA:GY:MC"] = banneredShield(shields["FSA:GY"], ["WM"]);
+  shields["FSA:GY:PS"] = banneredShield(shields["FSA:GY"], ["WM"]);
+  shields["FSA:GY:FS"] = {
+    spriteBlank: ["shield_fsa_fs_2", "shield_fsa_fs_3"],
+    textLayout: textConstraint("ellipse"),
+    textColor: "#ee9900",
+    colorLighten: "#ee9900",
+    padding: {
+      left: 2,
+      right: 2,
+      top: 3,
+      bottom: 2,
+    },
+  };
+
+
   // Other states as circles for now
   shields["FSA:WA"] = pillShield(Color.shields.white, Color.shields.black);
   shields["FSA:LN"] = pillShield(Color.shields.white, Color.shields.black);
