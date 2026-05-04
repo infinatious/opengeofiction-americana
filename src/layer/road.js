@@ -518,7 +518,7 @@ class RoadSimpleCasing extends Road {
       "any",
       [
         "all",
-        ["!", ["in", getClass, ["literal", ["motorway", "trunk"]]]],
+        ["!", ["in", getClass, ["literal", ["motorway", "trunk", "path"]]]],
         isNotExpressway,
         isNotLink,
       ],
@@ -928,7 +928,7 @@ class Minor extends Road {
     super();
     this.constraints = [
       "all",
-      ["in", getClass, ["literal", ["minor", "service", "track", "path"]]],
+      ["in", getClass, ["literal", ["minor", "service", "track"]]],
       isNotToll,
     ];
 
@@ -937,6 +937,47 @@ class Minor extends Road {
 
     this.fillColor = roadFillColor(roadHue, this.minZoomFill);
   }
+}
+
+class Path extends Road {
+  constructor() {
+    super();
+    this.constraints = [
+      "all",
+      ["==", getClass, "path"],
+      isNotToll,
+    ];
+
+    this.minZoomFill = minZoomMinor;
+    this.minZoomCasing = minZoomMinor;
+
+    this.fillColor = roadFillColor(roadHue, this.minZoomFill);
+  }
+  fill = function () {
+    var layer = baseRoadLayer(
+      "fill",
+      this.brunnel,
+      this.minZoomFill,
+      this.maxZoomFill,
+      this.constraints
+    );
+    layer.layout = {
+      "line-cap": "round",
+      "line-join": "round",
+      visibility: "visible",
+      "line-sort-key": this.sortKey,
+    };
+    layer.paint = {
+      "line-opacity": opacity,
+      "line-color": "#cba",
+      "line-dasharray": [1.5, 1.5],
+      "line-width": {
+        "base": 1.8,
+        "stops": [[15, 1.8], [20, 6]]
+      }
+    };
+    return layer;
+  };
 }
 
 class MinorToll extends Minor {
@@ -1165,6 +1206,13 @@ class MinorBridge extends Minor {
   }
 }
 
+class PathBridge extends Path {
+  constructor() {
+    super();
+    this.brunnel = "bridge";
+  }
+}
+
 class MinorTollBridge extends MinorToll {
   constructor() {
     //undifferentiated
@@ -1265,6 +1313,7 @@ export const tertiaryExpressway = new TertiaryExpressway();
 export const busway = new Busway();
 export const minor = new Minor();
 export const minorToll = new MinorToll();
+export const path = new Path();
 
 export const motorwayBridge = new MotorwayBridge();
 export const trunkBridge = new TrunkBridge();
@@ -1280,6 +1329,7 @@ export const tertiaryExpresswayBridge = new TertiaryExpresswayBridge();
 export const buswayBridge = new BuswayBridge();
 export const minorBridge = new MinorBridge();
 export const minorTollBridge = new MinorTollBridge();
+export const pathBridge = new PathBridge();
 
 export const motorwayLink = new MotorwayLink();
 export const trunkLink = new TrunkLink();
@@ -1361,6 +1411,11 @@ export const legendEntries = [
       ["==", getClass, "service"],
       [...smallServiceSelector, true, false],
     ],
+  },
+  {
+    description: "Path",
+    layers: [path.fill().id],
+    filter: ["==", getClass, "path"],
   },
   {
     description: "Toll road",
