@@ -254,8 +254,8 @@ export const airportGate = {
   paint: {
     "text-color": Color.airportLabel,
     "text-halo-blur": 1,
-    "text-halo-color": "rgba(255, 255, 255, 1)",
-    "text-halo-width": 1,
+    "text-halo-color": "rgba(255, 208, 0, 1)",
+    "text-halo-width": 3,
   },
   layout: {
     visibility: "visible",
