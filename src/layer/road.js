@@ -140,6 +140,7 @@ function filterRoad(brunnel, constraints) {
         "minor",
         "service",
         "track",
+        "path",
       ],
     ],
   ];
@@ -927,7 +928,7 @@ class Minor extends Road {
     super();
     this.constraints = [
       "all",
-      ["in", getClass, ["literal", ["minor", "service", "track"]]],
+      ["in", getClass, ["literal", ["minor", "service", "track", "path"]]],
       isNotToll,
     ];
 
